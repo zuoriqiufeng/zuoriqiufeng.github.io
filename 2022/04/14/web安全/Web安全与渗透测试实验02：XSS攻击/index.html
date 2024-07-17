@@ -51,7 +51,7 @@
   <!-- 页面元数据 -->
   <title>Web安全与渗透测试：XSS攻击 - 学习记录</title>
   <meta name="keywords" content="Nerwork, Java, C/C++, Linux">
-  <meta desc name="description" content="学习和工作中的一些记录。 - 单身一万年 - 学习记录">
+  <meta desc name="description" content="学习和工作中的一些记录。 - a bit clumsy boy - 学习记录">
   
 <meta property="og:type" content="article">
 <meta property="og:title" content="Web安全与渗透测试：XSS攻击">
@@ -61,8 +61,8 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2022-04-14T08:45:57.000Z">
-<meta property="article:modified_time" content="2022-04-18T06:08:12.000Z">
-<meta property="article:author" content="单身一万年">
+<meta property="article:modified_time" content="2023-07-26T06:14:37.343Z">
+<meta property="article:author" content="a bit clumsy boy">
 <meta property="article:tag" content="Nerwork, Java, C&#x2F;C++, Linux">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -1645,9 +1645,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1690253052179),
+    lastupdate: new Date(1721210471577),
     sidebar: {
-      for_page: ["blogger","category","tagcloud","donate"],
+      for_page: ["blogger","category","tagcloud","donate","webinfo"],
       for_post: ["toc"],
       webinfo: {
         lastupd: {
@@ -2350,7 +2350,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='top'>
     
     
-      <p class="title">单身一万年的博客</p>
+      <p class="title">a bit clumsy boy</p>
     
     
   </div>
@@ -2442,7 +2442,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
   <a itemprop="url" class='author' href="/" rel="nofollow">
     <img itemprop="image" src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-    <p itemprop="name">请设置文章作者</p>
+    <p itemprop="name">a bit clumsy boy</p>
   </a>
 </div>
 
@@ -2519,45 +2519,45 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </li>
 </ul>
 <h2 id="实验步骤"><a href="#实验步骤" class="headerlink" title="实验步骤"></a>实验步骤</h2><h3 id="存储型XSS攻击（Stored-XSS-Attacks"><a href="#存储型XSS攻击（Stored-XSS-Attacks" class="headerlink" title="存储型XSS攻击（Stored XSS Attacks)"></a>存储型XSS攻击（Stored XSS Attacks)</h3><p>过滤所有用户输入是一个不错的做法，特别是那些后期会被用作OS、脚本或数据库查询参数的输入。尤其是那些将要长期存储的内容。用户不能创建非法的消息内容，例如：可以导致其他用户访问时载入非预期的页面或内容。</p>
-<p><img src="E:\MD-Images\image-20220418140006451.png" class="lazyload" data-srcset="E:\MD-Images\image-20220418140006451.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418140006451"> </p>
+<p><img src="D:\develop\MD-Images\image-20220418140006451.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220418140006451.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418140006451"> </p>
 <p>在Title中输入任意字符，在Message一栏中输入代码，能够弹出对话框，并提交</p>
 <p>插入代码：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span>alert(“XSS”)<span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p><img src="E:\MD-Images\image-20220418140253211.png" class="lazyload" data-srcset="E:\MD-Images\image-20220418140253211.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418140253211"> </p>
+<p><img src="D:\develop\MD-Images\image-20220418140253211.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220418140253211.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418140253211"> </p>
 <p>点击Message List中刚才插入的消息</p>
-<p><img src="E:\MD-Images\image-20220418140308142.png" class="lazyload" data-srcset="E:\MD-Images\image-20220418140308142.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418140308142"> </p>
+<p><img src="D:\develop\MD-Images\image-20220418140308142.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220418140308142.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418140308142"> </p>
 <p>点击之后出现弹框</p>
-<p><img src="E:\MD-Images\image-20220418140337027.png" class="lazyload" data-srcset="E:\MD-Images\image-20220418140337027.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418140337027"> </p>
+<p><img src="D:\develop\MD-Images\image-20220418140337027.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220418140337027.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418140337027"> </p>
 <h3 id="反射型XSS攻击-Reflected-XSS-Attack"><a href="#反射型XSS攻击-Reflected-XSS-Attack" class="headerlink" title="反射型XSS攻击(Reflected XSS Attack)"></a>反射型XSS攻击(Reflected XSS Attack)</h3><p>在服务器端验证所有输入是一个好的实践。当未验证的用户输入用在HTTP响应时会发生XSS。在一个反射XSS攻击中，攻击者可以使用攻击脚本制造一个URL，然后提交到另一个网站、发邮件或让受害者点击。</p>
-<p><img src="E:\MD-Images\image-20220418140358155.png" class="lazyload" data-srcset="E:\MD-Images\image-20220418140358155.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418140358155"> </p>
+<p><img src="D:\develop\MD-Images\image-20220418140358155.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220418140358155.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418140358155"> </p>
 <p>我们需要在 “Enter your three digit access code” 框中输入构造一个脚本，像上节实验一样弹出一个对话框。使用脚本</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span>alter(‘reflected XSS attack!’)<span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>构造一个脚本，点击Purchase弹出对话框</p>
-<p><img src="E:\MD-Images\image-20220418140503183.png" class="lazyload" data-srcset="E:\MD-Images\image-20220418140503183.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418140503183"> </p>
+<p><img src="D:\develop\MD-Images\image-20220418140503183.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220418140503183.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418140503183"> </p>
 <p>实验成功</p>
-<p><img src="E:\MD-Images\image-20220418140511281.png" class="lazyload" data-srcset="E:\MD-Images\image-20220418140511281.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418140511281"> </p>
+<p><img src="D:\develop\MD-Images\image-20220418140511281.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220418140511281.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418140511281"> </p>
 <h3 id="DOM注入-DOM-Injection"><a href="#DOM注入-DOM-Injection" class="headerlink" title="DOM注入(DOM Injection)"></a>DOM注入(DOM Injection)</h3><p>一些应用程序专门使用AJAX 操控和更新在DOM 中能够直接使用的JavaScript、DHTML和eval()方法。攻击者可能会利用这一点，通过拦截答复，注入一些JavaScript 命令，实施攻击。</p>
-<p><img src="E:\MD-Images\image-20220418140638643.png" class="lazyload" data-srcset="E:\MD-Images\image-20220418140638643.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418140638643"> </p>
+<p><img src="D:\develop\MD-Images\image-20220418140638643.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220418140638643.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418140638643"> </p>
 <p>根据提示查看源码</p>
-<p><img src="E:\MD-Images\image-20220418140649451.png" class="lazyload" data-srcset="E:\MD-Images\image-20220418140649451.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418140649451"> </p>
+<p><img src="D:\develop\MD-Images\image-20220418140649451.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220418140649451.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418140649451"> </p>
 <p>查看Html源码发现，输入框是使用了一个JavaScript方法监听，一旦输入内容，就会触发这个方法，而下面的Activate!按钮也是使用了一个disabled属性不能够使用。应该是输入的License Key正确才能够激活。</p>
-<p><img src="E:\MD-Images\image-20220418140700196.png" class="lazyload" data-srcset="E:\MD-Images\image-20220418140700196.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418140700196"> </p>
+<p><img src="D:\develop\MD-Images\image-20220418140700196.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220418140700196.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418140700196"> </p>
 <p>从javascript源码中发现，实时获取输入框内容，然后构造Ajax请求，请求一个接口验证输入的注册码是否正确，根据返回值来进行显示</p>
-<p><img src="E:\MD-Images\image-20220418140709370.png" class="lazyload" data-srcset="E:\MD-Images\image-20220418140709370.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418140709370"> </p>
+<p><img src="D:\develop\MD-Images\image-20220418140709370.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220418140709370.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418140709370"> </p>
 <p>查看Java源码发现，处理流程是从ajax提交的内容当中取出值，也就是我们输入的注册码，用来和正确的注册码相对比，如果正确，就返回一段javaScript代码，让前端页面的那个Activate!按钮能够时候，如果不正确，返回实现设置好的一个内容。因此我们如果不使用正确的注册码，就需要拦截这个Ajax请求的response，在返回值中插入document.form.SUBMIT.disabled = false;这段代码。</p>
 <p>经过测验发现，插入值时需要将response中的值全部删掉然后再插入这段代码，让javaScript源码中处理返回值时，刚执行这段代码就无法执行下去，完成Dom型XSS攻击，从而能够使用Activate!按钮完成激活。</p>
 <p>在输入框中随便输入值</p>
-<p><img src="E:\MD-Images\image-20220418140719878.png" class="lazyload" data-srcset="E:\MD-Images\image-20220418140719878.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418140719878"> </p>
+<p><img src="D:\develop\MD-Images\image-20220418140719878.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220418140719878.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418140719878"> </p>
 <p>WebScarab拦截response</p>
-<p><img src="E:\MD-Images\image-20220418140735226.png" class="lazyload" data-srcset="E:\MD-Images\image-20220418140735226.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418140735226"> </p>
+<p><img src="D:\develop\MD-Images\image-20220418140735226.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220418140735226.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418140735226"> </p>
 <p>替换代码</p>
-<p><img src="E:\MD-Images\image-20220418140742177.png" class="lazyload" data-srcset="E:\MD-Images\image-20220418140742177.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418140742177"> </p>
+<p><img src="D:\develop\MD-Images\image-20220418140742177.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220418140742177.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418140742177"> </p>
 <p>点击Accept Changes，查看html源码，发现按钮的disabled属性消失，按钮已经能够使用</p>
-<p><img src="E:\MD-Images\image-20220418140758556.png" class="lazyload" data-srcset="E:\MD-Images\image-20220418140758556.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418140758556"> </p>
+<p><img src="D:\develop\MD-Images\image-20220418140758556.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220418140758556.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418140758556"> </p>
 <p>点击按钮，实验成功</p>
-<p><img src="E:\MD-Images\image-20220418140808375.png" class="lazyload" data-srcset="E:\MD-Images\image-20220418140808375.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418140808375"> </p>
+<p><img src="D:\develop\MD-Images\image-20220418140808375.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220418140808375.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418140808375"> </p>
 
   </div>
   
@@ -2582,10 +2582,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-04-18T14:08:12+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-07-26T14:14:37+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2022年4月18日</p>
+    <p>更新于：2023年7月26日</p>
   </a>
 </div>
 
@@ -3306,7 +3306,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"学习记录","url":"https://username.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"单身一万年","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/","sameAs":["https://github.com/volantis-x"],"description":"学习和工作中的一些记录。"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://username.github.io/","name":"学习记录"}},{"@type":"ListItem","position":2,"item":{"@id":"https://username.github.io/categories/Web安全与渗透测试实验/","name":"Web安全与渗透测试实验"}},{"@type":"ListItem","position":3,"item":{"@id":"https://username.github.io/2022/04/14/web安全/Web安全与渗透测试实验02：XSS攻击/","name":"Web安全与渗透测试：XSS攻击"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"学习记录","url":"https://username.github.io/","keywords":"Nerwork, Java, C/C++, Linux","description":"学习和工作中的一些记录。","author":{"@type":"Person","name":"单身一万年","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/","description":"学习和工作中的一些记录。"},"publisher":{"@type":"Organization","name":"学习记录","url":"https://username.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://username.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Web安全与渗透测试：XSS攻击","description":"学习和工作中的一些记录。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://username.github.io/2022/04/14/web%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8%E4%B8%8E%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AE%9E%E9%AA%8C02%EF%BC%9AXSS%E6%94%BB%E5%87%BB/"},"author":{"@type":"Person","name":"单身一万年","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/"},"publisher":{"@type":"Organization","name":"学习记录","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://username.github.io/2022/04/14/web%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8%E4%B8%8E%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AE%9E%E9%AA%8C02%EF%BC%9AXSS%E6%94%BB%E5%87%BB/","wordCount":0,"datePublished":"2022-04-14T08:45:57.000Z","dateModified":"2022-04-18T06:08:12.000Z","articleSection":"Web安全与渗透测试实验","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"学习记录","url":"https://username.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"a bit clumsy boy","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/","sameAs":["https://github.com/volantis-x"],"description":"学习和工作中的一些记录。"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://username.github.io/","name":"学习记录"}},{"@type":"ListItem","position":2,"item":{"@id":"https://username.github.io/categories/Web安全与渗透测试实验/","name":"Web安全与渗透测试实验"}},{"@type":"ListItem","position":3,"item":{"@id":"https://username.github.io/2022/04/14/web安全/Web安全与渗透测试实验02：XSS攻击/","name":"Web安全与渗透测试：XSS攻击"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"学习记录","url":"https://username.github.io/","keywords":"Nerwork, Java, C/C++, Linux","description":"学习和工作中的一些记录。","author":{"@type":"Person","name":"a bit clumsy boy","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/","description":"学习和工作中的一些记录。"},"publisher":{"@type":"Organization","name":"学习记录","url":"https://username.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://username.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Web安全与渗透测试：XSS攻击","description":"学习和工作中的一些记录。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://username.github.io/2022/04/14/web%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8%E4%B8%8E%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AE%9E%E9%AA%8C02%EF%BC%9AXSS%E6%94%BB%E5%87%BB/"},"author":{"@type":"Person","name":"a bit clumsy boy","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/"},"publisher":{"@type":"Organization","name":"学习记录","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://username.github.io/2022/04/14/web%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8%E4%B8%8E%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AE%9E%E9%AA%8C02%EF%BC%9AXSS%E6%94%BB%E5%87%BB/","wordCount":0,"datePublished":"2022-04-14T08:45:57.000Z","dateModified":"2023-07-26T06:14:37.343Z","articleSection":"Web安全与渗透测试实验","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

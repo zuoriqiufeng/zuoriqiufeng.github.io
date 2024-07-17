@@ -51,7 +51,7 @@
   <!-- 页面元数据 -->
   <title>Web安全与渗透测试：访问控制与购物漏洞实验 - 学习记录</title>
   <meta name="keywords" content="Webgoat,Nerwork, Java, C/C++, Linux">
-  <meta desc name="description" content="学习和工作中的一些记录。 - 单身一万年 - 学习记录">
+  <meta desc name="description" content="学习和工作中的一些记录。 - a bit clumsy boy - 学习记录">
   
 <meta property="og:type" content="article">
 <meta property="og:title" content="Web安全与渗透测试：访问控制与购物漏洞实验">
@@ -61,8 +61,8 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2022-04-14T08:45:35.000Z">
-<meta property="article:modified_time" content="2023-05-12T03:32:42.000Z">
-<meta property="article:author" content="单身一万年">
+<meta property="article:modified_time" content="2023-07-26T06:14:34.555Z">
+<meta property="article:author" content="a bit clumsy boy">
 <meta property="article:tag" content="Webgoat">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -1645,9 +1645,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1690253052179),
+    lastupdate: new Date(1721210471577),
     sidebar: {
-      for_page: ["blogger","category","tagcloud","donate"],
+      for_page: ["blogger","category","tagcloud","donate","webinfo"],
       for_post: ["toc"],
       webinfo: {
         lastupd: {
@@ -2350,7 +2350,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='top'>
     
     
-      <p class="title">单身一万年的博客</p>
+      <p class="title">a bit clumsy boy</p>
     
     
   </div>
@@ -2442,7 +2442,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
   <a itemprop="url" class='author' href="/" rel="nofollow">
     <img itemprop="image" src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-    <p itemprop="name">请设置文章作者</p>
+    <p itemprop="name">a bit clumsy boy</p>
   </a>
 </div>
 
@@ -2516,50 +2516,50 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p><strong>目标：</strong>‘webgoat’用户可以访问lessonPlans/en目录中的所有文件。 尝试破坏访问控制机制并访问不在列出的目录中的资源。 选择要查看的文件后，WebGoat将报告是否授予对文件的访问权限。 尝试获取的有趣文件可能是像WEB-INF/spring-security.xml这样的文件。 请记住，文件路径将根据WebGoat的启动方式而有所不同。</p>
 <p>当前路径：</p>
 <p>./extract/webapps/WebGoat/plugin_extracted/plugin/BackDoors/lessonPlans/en</p>
-<img src="E:\MD-Images\image-20220418135132115.png" class="lazyload" data-srcset="E:\MD-Images\image-20220418135132115.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418135132115"  /> 
+<img src="D:\develop\MD-Images\image-20220418135132115.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220418135132115.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418135132115"  /> 
 
 <p>选中“Choose the file to view”列表下的任何一个文件，然后点击【View File】</p>
 <p>根据提示现在我们要获取”WEB-INF/spring-security.xml”文件的内容。首先说一下../代表上一级目录，其次我们要找到文件的路径，最后更改文件路径。</p>
 <p>文件WEB-INF/spring-security.xml的实际路径为: “/.extract/webapps/ webgoat/WEB-INF/spring-security.xml”</p>
 <p>因此我们要先退回到”/.extract/webapps/webgoat/“目录下，故相对路径为”../../../../../WEB-INF/spring-security.xml”，这个在WebScarab上抓取的请求上修改</p>
-<img src="E:\MD-Images\image-20220418135215191.png" class="lazyload" data-srcset="E:\MD-Images\image-20220418135215191.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418135215191"  /> 
+<img src="D:\develop\MD-Images\image-20220418135215191.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220418135215191.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418135215191"  /> 
 
 <p>将请求的文件修改为../../../../../WEB-INF/spring-security.xml</p>
-<p><img src="E:\MD-Images\image-20220418135257591.png" class="lazyload" data-srcset="E:\MD-Images\image-20220418135257591.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418135257591"> </p>
+<p><img src="D:\develop\MD-Images\image-20220418135257591.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220418135257591.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418135257591"> </p>
 <p>实验成功</p>
-<p><img src="E:\MD-Images\image-20220418135307461.png" class="lazyload" data-srcset="E:\MD-Images\image-20220418135307461.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418135307461"> </p>
-<h3 id="绕过表示层-业务层-访问控制-Bypass-Presentational-Layer-Access-Control"><a href="#绕过表示层-业务层-访问控制-Bypass-Presentational-Layer-Access-Control" class="headerlink" title="绕过表示层(业务层)访问控制(Bypass Presentational Layer Access Control)"></a>绕过表示层(业务层)访问控制(Bypass Presentational Layer Access Control)</h3><p><img src="E:\MD-Images\image-20220418135335014.png" class="lazyload" data-srcset="E:\MD-Images\image-20220418135335014.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418135335014"> </p>
+<p><img src="D:\develop\MD-Images\image-20220418135307461.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220418135307461.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418135307461"> </p>
+<h3 id="绕过表示层-业务层-访问控制-Bypass-Presentational-Layer-Access-Control"><a href="#绕过表示层-业务层-访问控制-Bypass-Presentational-Layer-Access-Control" class="headerlink" title="绕过表示层(业务层)访问控制(Bypass Presentational Layer Access Control)"></a>绕过表示层(业务层)访问控制(Bypass Presentational Layer Access Control)</h3><p><img src="D:\develop\MD-Images\image-20220418135335014.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220418135335014.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418135335014"> </p>
 <p>第一步，先找出来可以执行删除个人资料操作的帐户，可以先登录管理员账户Jhon</p>
-<p><img src="E:\MD-Images\image-20220418135456539.png" class="lazyload" data-srcset="E:\MD-Images\image-20220418135456539.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418135456539"> </p>
+<p><img src="D:\develop\MD-Images\image-20220418135456539.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220418135456539.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418135456539"> </p>
 <p>  随便选择一个用户点击DeleteProfile，并使用WebScarab拦截请求</p>
-<p><img src="E:\MD-Images\image-20220418135507473.png" class="lazyload" data-srcset="E:\MD-Images\image-20220418135507473.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418135507473"> </p>
+<p><img src="D:\develop\MD-Images\image-20220418135507473.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220418135507473.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418135507473"> </p>
 <p>此时发现action参数为Deletefile，故因此在删除员工信息资料时的action参数为DeleteProfile，这就是删除员工资料的操作标识</p>
 <p>根据提示使用Tom用户登录，密码为tom</p>
-<p><img src="E:\MD-Images\image-20220418135527981.png" class="lazyload" data-srcset="E:\MD-Images\image-20220418135527981.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418135527981"> </p>
+<p><img src="D:\develop\MD-Images\image-20220418135527981.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220418135527981.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418135527981"> </p>
 <p>点击ViewProfile选项并使用WebScarab拦截请求</p>
-<p><img src="E:\MD-Images\image-20220418135537871.png" class="lazyload" data-srcset="E:\MD-Images\image-20220418135537871.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418135537871"> </p>
+<p><img src="D:\develop\MD-Images\image-20220418135537871.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220418135537871.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418135537871"> </p>
 <p>WebScarab拦截请求，并修改参数</p>
-<p><img src="E:\MD-Images\image-20220418135549772.png" class="lazyload" data-srcset="E:\MD-Images\image-20220418135549772.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418135549772"> </p>
+<p><img src="D:\develop\MD-Images\image-20220418135549772.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220418135549772.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418135549772"> </p>
 <p>  将ViewProfile参数修改为DeleteProfile,并通过请求</p>
-<p><img src="E:\MD-Images\image-20220418135611880.png" class="lazyload" data-srcset="E:\MD-Images\image-20220418135611880.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418135611880"> </p>
-<h3 id="绕过数据层访问控制（LAB-Role-Based-Access-Control：Bypass-Data-Layer-Access-Control）"><a href="#绕过数据层访问控制（LAB-Role-Based-Access-Control：Bypass-Data-Layer-Access-Control）" class="headerlink" title="绕过数据层访问控制（LAB: Role Based Access Control：Bypass Data Layer Access Control）"></a>绕过数据层访问控制（LAB: Role Based Access Control：Bypass Data Layer Access Control）</h3><p><img src="E:\MD-Images\image-20220418135633133.png" class="lazyload" data-srcset="E:\MD-Images\image-20220418135633133.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418135633133"> </p>
+<p><img src="D:\develop\MD-Images\image-20220418135611880.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220418135611880.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418135611880"> </p>
+<h3 id="绕过数据层访问控制（LAB-Role-Based-Access-Control：Bypass-Data-Layer-Access-Control）"><a href="#绕过数据层访问控制（LAB-Role-Based-Access-Control：Bypass-Data-Layer-Access-Control）" class="headerlink" title="绕过数据层访问控制（LAB: Role Based Access Control：Bypass Data Layer Access Control）"></a>绕过数据层访问控制（LAB: Role Based Access Control：Bypass Data Layer Access Control）</h3><p><img src="D:\develop\MD-Images\image-20220418135633133.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220418135633133.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418135633133"> </p>
 <p>登录tom用户</p>
-<p><img src="E:\MD-Images\image-20220418135642276.png" class="lazyload" data-srcset="E:\MD-Images\image-20220418135642276.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418135642276"> </p>
+<p><img src="D:\develop\MD-Images\image-20220418135642276.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220418135642276.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418135642276"> </p>
 <p>点击ViewProfile，使用WebScarab拦截请求</p>
-<p><img src="E:\MD-Images\image-20220418135651393.png" class="lazyload" data-srcset="E:\MD-Images\image-20220418135651393.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418135651393"> </p>
+<p><img src="D:\develop\MD-Images\image-20220418135651393.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220418135651393.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418135651393"> </p>
 <p>可以看到ViewProfile操作的标识就是employee_id,修改enployee_id即可查看其他员工的资料</p>
 <p>修改employee_id</p>
-<p><img src="E:\MD-Images\image-20220418135706573.png" class="lazyload" data-srcset="E:\MD-Images\image-20220418135706573.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418135706573"> </p>
-<p><img src="E:\MD-Images\image-20220418135711875.png" class="lazyload" data-srcset="E:\MD-Images\image-20220418135711875.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418135711875"> </p>
+<p><img src="D:\develop\MD-Images\image-20220418135706573.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220418135706573.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418135706573"> </p>
+<p><img src="D:\develop\MD-Images\image-20220418135711875.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220418135711875.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418135711875"> </p>
 <h3 id="购物车并发缺陷（Shopping-Cart-Concurrency-Flaw）"><a href="#购物车并发缺陷（Shopping-Cart-Concurrency-Flaw）" class="headerlink" title="购物车并发缺陷（Shopping Cart Concurrency Flaw）"></a>购物车并发缺陷（Shopping Cart Concurrency Flaw）</h3><p>Web 应用程序可以同时处理很多HTTP 请求。开发人员经常使用的变量不是线程安全的。线程安全是指一个对象或类的领域在多线程同时使用的时候总是保持有效的状态。它往往可以利用并发错误，精确地在同一时间同一个页面加载另一个用户。因为所有的线程共享同一个的方法区，所有的类变量存储在方法区，多个线程试图同时使用相同的类变量。用户利用Web 应用程序中的并发错误，查看同一时间另一个用户试图登录同一个功能的信息。</p>
 <p>打开购物车并发页面开始实验，使用两个浏览器</p>
-<p><img src="E:\MD-Images\image-20220418135746849.png" class="lazyload" data-srcset="E:\MD-Images\image-20220418135746849.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418135746849"> </p>
+<p><img src="D:\develop\MD-Images\image-20220418135746849.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220418135746849.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418135746849"> </p>
 <p>在第一个页面选取低价商品，点击purchase</p>
-<p><img src="E:\MD-Images\image-20220418135854552.png" class="lazyload" data-srcset="E:\MD-Images\image-20220418135854552.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418135854552"> </p>
+<p><img src="D:\develop\MD-Images\image-20220418135854552.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220418135854552.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418135854552"> </p>
 <p>在另外一个页面选取贵的商品更新到购物车</p>
-<p><img src="E:\MD-Images\image-20220418135902238.png" class="lazyload" data-srcset="E:\MD-Images\image-20220418135902238.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418135902238"> </p>
+<p><img src="D:\develop\MD-Images\image-20220418135902238.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220418135902238.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418135902238"> </p>
 <p>回到第一个页面点击confirm</p>
-<p><img src="E:\MD-Images\image-20220418135911730.png" class="lazyload" data-srcset="E:\MD-Images\image-20220418135911730.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418135911730"> </p>
+<p><img src="D:\develop\MD-Images\image-20220418135911730.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220418135911730.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220418135911730"> </p>
 <p>此时在选取低价商品页面点击confirm确定，发现使用低价购买的确是在高价页面选取的高价商品，这是由于购物车并发未使用线程安全保护，所以发生上述情况。</p>
 <p>代码如下：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">float</span> runningTOTAL = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">int</span> subTOTAL = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">float</span> calcTOTAL = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">int</span> quantity1 = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">int</span> quantity2 = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">int</span> quantity3 = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">int</span> quantity4 = <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
@@ -2588,10 +2588,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-05-12T11:32:42+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-07-26T14:14:34+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2023年5月12日</p>
+    <p>更新于：2023年7月26日</p>
   </a>
 </div>
 
@@ -3321,7 +3321,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"学习记录","url":"https://username.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"单身一万年","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/","sameAs":["https://github.com/volantis-x"],"description":"学习和工作中的一些记录。"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://username.github.io/","name":"学习记录"}},{"@type":"ListItem","position":2,"item":{"@id":"https://username.github.io/categories/Web安全与渗透测试实验/","name":"Web安全与渗透测试实验"}},{"@type":"ListItem","position":3,"item":{"@id":"https://username.github.io/2022/04/14/web安全/Web安全与渗透测试实验01：访问控制与购物漏洞/","name":"Web安全与渗透测试：访问控制与购物漏洞实验"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"学习记录","url":"https://username.github.io/","keywords":"Nerwork, Java, C/C++, Linux","description":"学习和工作中的一些记录。","author":{"@type":"Person","name":"单身一万年","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/","description":"学习和工作中的一些记录。"},"publisher":{"@type":"Organization","name":"学习记录","url":"https://username.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://username.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Web安全与渗透测试：访问控制与购物漏洞实验","description":"学习和工作中的一些记录。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://username.github.io/2022/04/14/web%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8%E4%B8%8E%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AE%9E%E9%AA%8C01%EF%BC%9A%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6%E4%B8%8E%E8%B4%AD%E7%89%A9%E6%BC%8F%E6%B4%9E/"},"author":{"@type":"Person","name":"单身一万年","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/"},"publisher":{"@type":"Organization","name":"学习记录","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://username.github.io/2022/04/14/web%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8%E4%B8%8E%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AE%9E%E9%AA%8C01%EF%BC%9A%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6%E4%B8%8E%E8%B4%AD%E7%89%A9%E6%BC%8F%E6%B4%9E/","wordCount":0,"datePublished":"2022-04-14T08:45:35.000Z","dateModified":"2023-05-12T03:32:42.000Z","articleSection":"Web安全与渗透测试实验","keywords":"Webgoat","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"学习记录","url":"https://username.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"a bit clumsy boy","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/","sameAs":["https://github.com/volantis-x"],"description":"学习和工作中的一些记录。"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://username.github.io/","name":"学习记录"}},{"@type":"ListItem","position":2,"item":{"@id":"https://username.github.io/categories/Web安全与渗透测试实验/","name":"Web安全与渗透测试实验"}},{"@type":"ListItem","position":3,"item":{"@id":"https://username.github.io/2022/04/14/web安全/Web安全与渗透测试实验01：访问控制与购物漏洞/","name":"Web安全与渗透测试：访问控制与购物漏洞实验"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"学习记录","url":"https://username.github.io/","keywords":"Nerwork, Java, C/C++, Linux","description":"学习和工作中的一些记录。","author":{"@type":"Person","name":"a bit clumsy boy","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/","description":"学习和工作中的一些记录。"},"publisher":{"@type":"Organization","name":"学习记录","url":"https://username.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://username.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Web安全与渗透测试：访问控制与购物漏洞实验","description":"学习和工作中的一些记录。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://username.github.io/2022/04/14/web%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8%E4%B8%8E%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AE%9E%E9%AA%8C01%EF%BC%9A%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6%E4%B8%8E%E8%B4%AD%E7%89%A9%E6%BC%8F%E6%B4%9E/"},"author":{"@type":"Person","name":"a bit clumsy boy","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/"},"publisher":{"@type":"Organization","name":"学习记录","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://username.github.io/2022/04/14/web%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8%E4%B8%8E%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AE%9E%E9%AA%8C01%EF%BC%9A%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6%E4%B8%8E%E8%B4%AD%E7%89%A9%E6%BC%8F%E6%B4%9E/","wordCount":0,"datePublished":"2022-04-14T08:45:35.000Z","dateModified":"2023-07-26T06:14:34.555Z","articleSection":"Web安全与渗透测试实验","keywords":"Webgoat","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

@@ -51,7 +51,7 @@
   <!-- 页面元数据 -->
   <title>CCNA实验02：静态路由 - 学习记录</title>
   <meta name="keywords" content="Nerwork, Java, C/C++, Linux">
-  <meta desc name="description" content="学习和工作中的一些记录。 - 单身一万年 - 学习记录">
+  <meta desc name="description" content="学习和工作中的一些记录。 - a bit clumsy boy - 学习记录">
   
 <meta property="og:type" content="article">
 <meta property="og:title" content="CCNA实验02：静态路由">
@@ -61,8 +61,8 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2022-04-30T07:52:11.000Z">
-<meta property="article:modified_time" content="2022-04-30T08:22:40.000Z">
-<meta property="article:author" content="单身一万年">
+<meta property="article:modified_time" content="2023-07-26T06:12:07.353Z">
+<meta property="article:author" content="a bit clumsy boy">
 <meta property="article:tag" content="Nerwork, Java, C&#x2F;C++, Linux">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -1645,9 +1645,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1690253052179),
+    lastupdate: new Date(1721210471577),
     sidebar: {
-      for_page: ["blogger","category","tagcloud","donate"],
+      for_page: ["blogger","category","tagcloud","donate","webinfo"],
       for_post: ["toc"],
       webinfo: {
         lastupd: {
@@ -2350,7 +2350,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='top'>
     
     
-      <p class="title">单身一万年的博客</p>
+      <p class="title">a bit clumsy boy</p>
     
     
   </div>
@@ -2442,7 +2442,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
   <a itemprop="url" class='author' href="/" rel="nofollow">
     <img itemprop="image" src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-    <p itemprop="name">请设置文章作者</p>
+    <p itemprop="name">a bit clumsy boy</p>
   </a>
 </div>
 
@@ -2486,12 +2486,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li>掌握使用路由器模拟PC</li>
 <li>掌握查看路由表的能力</li>
 </ol>
-<h2 id="拓扑与需求"><a href="#拓扑与需求" class="headerlink" title="拓扑与需求"></a>拓扑与需求</h2><h3 id="拓扑"><a href="#拓扑" class="headerlink" title="拓扑"></a>拓扑</h3><p><img src="E:\MD-Images\image-20220430155610642.png" class="lazyload" data-srcset="E:\MD-Images\image-20220430155610642.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220430155610642"> </p>
+<h2 id="拓扑与需求"><a href="#拓扑与需求" class="headerlink" title="拓扑与需求"></a>拓扑与需求</h2><h3 id="拓扑"><a href="#拓扑" class="headerlink" title="拓扑"></a>拓扑</h3><p><img src="D:\develop\MD-Images\image-20220430155610642.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220430155610642.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220430155610642"> </p>
 <h3 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h3><ol>
 <li>PC0为VPCS设备，PC1为路由器模拟PC，为两台PC配置IP、网关等实现模拟PC</li>
 <li>PC0在LAN1中，PC1在LAN2中，使用静态路由实现PC0和PC1之间互相通信</li>
 </ol>
-<h2 id="实验配置"><a href="#实验配置" class="headerlink" title="实验配置"></a>实验配置</h2><h3 id="配置PC0与PC1"><a href="#配置PC0与PC1" class="headerlink" title="配置PC0与PC1"></a>配置PC0与PC1</h3><p><img src="E:\MD-Images\image-20220430160339113.png" class="lazyload" data-srcset="E:\MD-Images\image-20220430160339113.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220430160339113"> </p>
+<h2 id="实验配置"><a href="#实验配置" class="headerlink" title="实验配置"></a>实验配置</h2><h3 id="配置PC0与PC1"><a href="#配置PC0与PC1" class="headerlink" title="配置PC0与PC1"></a>配置PC0与PC1</h3><p><img src="D:\develop\MD-Images\image-20220430160339113.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220430160339113.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220430160339113"> </p>
 <h3 id="配置路由器"><a href="#配置路由器" class="headerlink" title="配置路由器"></a>配置路由器</h3><p>R1:</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">Router&gt;</span><span class="bash"><span class="built_in">enable</span></span> </span><br><span class="line"><span class="meta">Router#</span><span class="bash">conf ter</span> </span><br><span class="line"><span class="meta">Router(config)#</span><span class="bash">host R1</span></span><br><span class="line"><span class="meta">R1(config)#</span><span class="bash">int g0/0/1</span></span><br><span class="line"><span class="meta">R1(config-if)#</span><span class="bash">ip add 10.12.12.1 255.255.255.0</span></span><br><span class="line"><span class="meta">R1(config-if)#</span><span class="bash">no shut</span></span><br><span class="line"><span class="meta">R1(config-if)#</span><span class="bash">int g0/0/0</span></span><br><span class="line"><span class="meta">R1(config-if)#</span><span class="bash">ip add 10.10.10.254 255.255.255.0</span></span><br><span class="line"><span class="meta">R1(config-if)#</span><span class="bash">no shut</span> </span><br><span class="line"><span class="meta">R1(config-if)#</span><span class="bash"><span class="built_in">exit</span></span></span><br><span class="line"><span class="meta">R1(config)#</span><span class="bash">ip route 0.0.0.0 0.0.0.0 10.12.12.2</span></span><br></pre></td></tr></table></figure>
 
@@ -2502,8 +2502,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">Router&gt;</span><span class="bash">enabl</span></span><br><span class="line"><span class="meta">Router#</span><span class="bash">conf ter</span></span><br><span class="line"><span class="meta">Router(config)#</span><span class="bash">host R3</span></span><br><span class="line"><span class="meta">R3(config)#</span><span class="bash"></span></span><br><span class="line"><span class="bash">R3(config)<span class="comment">#int g0/0/1</span></span></span><br><span class="line"><span class="meta">R3(config-if)#</span><span class="bash">ip add 10.23.23.2 255.255.255.0</span></span><br><span class="line"><span class="meta">R3(config-if)#</span><span class="bash">no shut</span></span><br><span class="line"><span class="meta">R3(config-if)#</span><span class="bash">int g0/0/0</span></span><br><span class="line"><span class="meta">R3(config-if)#</span><span class="bash">ip add 10.10.20.254 255.255.255.0</span></span><br><span class="line"><span class="meta">R3(config-if)#</span><span class="bash">no shut</span></span><br><span class="line"><span class="meta">R3(config-if)#</span><span class="bash">ex</span></span><br><span class="line"><span class="meta">R3(config)#</span><span class="bash">ip route 0.0.0.0 0.0.0.0 10.23.23.1</span></span><br></pre></td></tr></table></figure>
 
 <p>连通性测试：</p>
-<p><img src="E:\MD-Images\image-20220430161658935.png" class="lazyload" data-srcset="E:\MD-Images\image-20220430161658935.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220430161658935"> </p>
-<h2 id="最终配置拓扑"><a href="#最终配置拓扑" class="headerlink" title="最终配置拓扑"></a>最终配置拓扑</h2><p><img src="E:\MD-Images\image-20220430161954134.png" class="lazyload" data-srcset="E:\MD-Images\image-20220430161954134.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220430161954134"> </p>
+<p><img src="D:\develop\MD-Images\image-20220430161658935.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220430161658935.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220430161658935"> </p>
+<h2 id="最终配置拓扑"><a href="#最终配置拓扑" class="headerlink" title="最终配置拓扑"></a>最终配置拓扑</h2><p><img src="D:\develop\MD-Images\image-20220430161954134.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220430161954134.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220430161954134"> </p>
 
   </div>
   
@@ -2528,10 +2528,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-04-30T16:22:40+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-07-26T14:12:07+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2022年4月30日</p>
+    <p>更新于：2023年7月26日</p>
   </a>
 </div>
 
@@ -3260,7 +3260,7 @@ Console信息抓取和识别
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"学习记录","url":"https://username.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"单身一万年","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/","sameAs":["https://github.com/volantis-x"],"description":"学习和工作中的一些记录。"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://username.github.io/","name":"学习记录"}},{"@type":"ListItem","position":3,"item":{"@id":"https://username.github.io/2022/04/30/CCNA/CCNA实验02：静态路由/","name":"CCNA实验02：静态路由"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"学习记录","url":"https://username.github.io/","keywords":"Nerwork, Java, C/C++, Linux","description":"学习和工作中的一些记录。","author":{"@type":"Person","name":"单身一万年","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/","description":"学习和工作中的一些记录。"},"publisher":{"@type":"Organization","name":"学习记录","url":"https://username.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://username.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"CCNA实验02：静态路由","description":"学习和工作中的一些记录。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://username.github.io/2022/04/30/CCNA/CCNA%E5%AE%9E%E9%AA%8C02%EF%BC%9A%E9%9D%99%E6%80%81%E8%B7%AF%E7%94%B1/"},"author":{"@type":"Person","name":"单身一万年","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/"},"publisher":{"@type":"Organization","name":"学习记录","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://username.github.io/2022/04/30/CCNA/CCNA%E5%AE%9E%E9%AA%8C02%EF%BC%9A%E9%9D%99%E6%80%81%E8%B7%AF%E7%94%B1/","wordCount":0,"datePublished":"2022-04-30T07:52:11.000Z","dateModified":"2022-04-30T08:22:40.000Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"学习记录","url":"https://username.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"a bit clumsy boy","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/","sameAs":["https://github.com/volantis-x"],"description":"学习和工作中的一些记录。"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://username.github.io/","name":"学习记录"}},{"@type":"ListItem","position":3,"item":{"@id":"https://username.github.io/2022/04/30/CCNA/CCNA实验02：静态路由/","name":"CCNA实验02：静态路由"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"学习记录","url":"https://username.github.io/","keywords":"Nerwork, Java, C/C++, Linux","description":"学习和工作中的一些记录。","author":{"@type":"Person","name":"a bit clumsy boy","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/","description":"学习和工作中的一些记录。"},"publisher":{"@type":"Organization","name":"学习记录","url":"https://username.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://username.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"CCNA实验02：静态路由","description":"学习和工作中的一些记录。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://username.github.io/2022/04/30/CCNA/CCNA%E5%AE%9E%E9%AA%8C02%EF%BC%9A%E9%9D%99%E6%80%81%E8%B7%AF%E7%94%B1/"},"author":{"@type":"Person","name":"a bit clumsy boy","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/"},"publisher":{"@type":"Organization","name":"学习记录","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://username.github.io/2022/04/30/CCNA/CCNA%E5%AE%9E%E9%AA%8C02%EF%BC%9A%E9%9D%99%E6%80%81%E8%B7%AF%E7%94%B1/","wordCount":0,"datePublished":"2022-04-30T07:52:11.000Z","dateModified":"2023-07-26T06:12:07.353Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

@@ -51,7 +51,7 @@
   <!-- 页面元数据 -->
   <title>CCNA实验07：单臂路由 - 学习记录</title>
   <meta name="keywords" content="Nerwork, Java, C/C++, Linux">
-  <meta desc name="description" content="学习和工作中的一些记录。 - 单身一万年 - 学习记录">
+  <meta desc name="description" content="学习和工作中的一些记录。 - a bit clumsy boy - 学习记录">
   
 <meta property="og:type" content="article">
 <meta property="og:title" content="CCNA实验07：单臂路由">
@@ -61,8 +61,8 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2022-05-02T08:18:36.000Z">
-<meta property="article:modified_time" content="2022-05-02T13:38:38.000Z">
-<meta property="article:author" content="单身一万年">
+<meta property="article:modified_time" content="2023-07-26T06:12:30.619Z">
+<meta property="article:author" content="a bit clumsy boy">
 <meta property="article:tag" content="Nerwork, Java, C&#x2F;C++, Linux">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -1645,9 +1645,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1690253052179),
+    lastupdate: new Date(1721210471577),
     sidebar: {
-      for_page: ["blogger","category","tagcloud","donate"],
+      for_page: ["blogger","category","tagcloud","donate","webinfo"],
       for_post: ["toc"],
       webinfo: {
         lastupd: {
@@ -2350,7 +2350,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='top'>
     
     
-      <p class="title">单身一万年的博客</p>
+      <p class="title">a bit clumsy boy</p>
     
     
   </div>
@@ -2442,7 +2442,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
   <a itemprop="url" class='author' href="/" rel="nofollow">
     <img itemprop="image" src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-    <p itemprop="name">请设置文章作者</p>
+    <p itemprop="name">a bit clumsy boy</p>
   </a>
 </div>
 
@@ -2490,7 +2490,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li><p>借助路由器(三层设备)实现VLAN之间设备的互相访问</p>
 </li>
 </ol>
-<h2 id="拓扑与需求"><a href="#拓扑与需求" class="headerlink" title="拓扑与需求"></a>拓扑与需求</h2><h3 id="拓扑"><a href="#拓扑" class="headerlink" title="拓扑"></a>拓扑</h3><p><img src="E:\MD-Images\image-20220502163910450.png" class="lazyload" data-srcset="E:\MD-Images\image-20220502163910450.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220502163910450">  </p>
+<h2 id="拓扑与需求"><a href="#拓扑与需求" class="headerlink" title="拓扑与需求"></a>拓扑与需求</h2><h3 id="拓扑"><a href="#拓扑" class="headerlink" title="拓扑"></a>拓扑</h3><p><img src="D:\develop\MD-Images\image-20220502163910450.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220502163910450.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220502163910450">  </p>
 <h3 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h3><ol>
 <li><p>  配置Trunk线路，思考何种情况下需要配置Trunk</p>
 </li>
@@ -2520,14 +2520,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">SW1(config)#</span><span class="bash">vlan 10</span></span><br><span class="line"><span class="meta">SW1(config)#</span><span class="bash">vlan 20</span></span><br><span class="line"><span class="meta">SW1(config-vlan)#</span><span class="bash">ex</span></span><br><span class="line"><span class="meta">SW1(config)#</span><span class="bash">int fa0/1</span></span><br><span class="line"><span class="meta">SW1(config-if)#</span><span class="bash">switch mo a</span></span><br><span class="line"><span class="meta">SW1(config-if)#</span><span class="bash">switch a v 10</span></span><br><span class="line"><span class="meta">SW1(config)#</span><span class="bash">int fa0/2</span></span><br><span class="line"><span class="meta">SW1(config-if)#</span><span class="bash">switch mode access</span> </span><br><span class="line"><span class="meta">SW1(config-if)#</span><span class="bash">switchport access vlan 20</span></span><br><span class="line">// 配置trunk 链路通过vlan</span><br><span class="line"><span class="meta">SW1(config-if)#</span><span class="bash">int fa0/3</span></span><br><span class="line"><span class="meta">SW1(config-if)#</span><span class="bash">switchport tr a v 10,20</span></span><br></pre></td></tr></table></figure>
 
 <p>SW2会收到来自SW1的VLAN配置，如下图所示：</p>
-<p><img src="E:\MD-Images\image-20220502165151827.png" class="lazyload" data-srcset="E:\MD-Images\image-20220502165151827.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220502165151827"> </p>
+<p><img src="D:\develop\MD-Images\image-20220502165151827.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220502165151827.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220502165151827"> </p>
 <p>SW2：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">// 配置trunk 链路通过vlan</span><br><span class="line"><span class="meta">SW2(config)#</span><span class="bash">int fa0/3</span></span><br><span class="line"><span class="meta">SW2(config-if)#</span><span class="bash">switch mo tr</span></span><br><span class="line"><span class="meta">SW2(config-if)#</span><span class="bash">switchport tr a v 10,20</span></span><br><span class="line">// 配置具体vlan</span><br><span class="line"><span class="meta">SW2(config-if)#</span><span class="bash">int fa0/1</span></span><br><span class="line"><span class="meta">SW2(config-if)#</span><span class="bash">switch mo a</span></span><br><span class="line"><span class="meta">SW2(config-if)#</span><span class="bash">switch a v 10</span></span><br><span class="line"><span class="meta">SW2(config-if)#</span><span class="bash">int fa0/2</span></span><br><span class="line"><span class="meta">SW2(config-if)#</span><span class="bash">switch mo ac</span></span><br><span class="line"><span class="meta">SW2(config-if)#</span><span class="bash">switch a v 20</span></span><br></pre></td></tr></table></figure>
 
 <p>vlan10内主机互ping：</p>
-<p><img src="E:\MD-Images\image-20220502170301439.png" class="lazyload" data-srcset="E:\MD-Images\image-20220502170301439.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220502170301439"> </p>
+<p><img src="D:\develop\MD-Images\image-20220502170301439.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220502170301439.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220502170301439"> </p>
 <p>vlan10与vlan20内主机互ping：</p>
-<p><img src="E:\MD-Images\image-20220502170543102.png" class="lazyload" data-srcset="E:\MD-Images\image-20220502170543102.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220502170543102"> </p>
+<p><img src="D:\develop\MD-Images\image-20220502170543102.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220502170543102.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220502170543102"> </p>
 <h3 id="配置单臂路由"><a href="#配置单臂路由" class="headerlink" title="配置单臂路由"></a>配置单臂路由</h3><p>配置代码：</p>
 <p>R1:</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">Router&gt;</span><span class="bash"><span class="built_in">enable</span></span> </span><br><span class="line"><span class="meta">Router#</span><span class="bash">conf ter</span></span><br><span class="line"><span class="meta">Router(config)#</span><span class="bash">host R1</span></span><br><span class="line"><span class="meta">R1(config)#</span><span class="bash">int g0/0/0.1</span></span><br><span class="line"><span class="meta">R1(config-subif)#</span><span class="bash">encapsulation dot1Q 10</span></span><br><span class="line"><span class="meta">R1(config-subif)#</span><span class="bash">ip add 10.10.10.254 255.255.255.0</span></span><br><span class="line"><span class="meta">R1(config-subif)#</span><span class="bash">int g0/0/0.2</span></span><br><span class="line"><span class="meta">R1(config-subif)#</span><span class="bash">encapsulation dot1Q 20</span></span><br><span class="line"><span class="meta">R1(config-subif)#</span><span class="bash">ip add 10.10.20.254 255.255.255.0</span></span><br><span class="line"><span class="meta">R1(config-subif)#</span><span class="bash">ex</span></span><br><span class="line"><span class="meta">R1(config)#</span><span class="bash">int g0/0/0</span></span><br><span class="line"><span class="meta">R1(config-if)#</span><span class="bash">no shut</span></span><br></pre></td></tr></table></figure>
@@ -2536,7 +2536,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">SW2(config)#</span><span class="bash">int fa0/4</span></span><br><span class="line"><span class="meta">SW2(config-if)#</span><span class="bash">swit mo tr</span></span><br><span class="line"><span class="meta">SW2(config-if)#</span><span class="bash">swit tr a v all</span></span><br><span class="line"><span class="meta">SW2(config-if)#</span><span class="bash">ex</span></span><br></pre></td></tr></table></figure>
 
 <p>PC机测试与网关之间的连通性：</p>
-<p><img src="E:\MD-Images\image-20220502194519127.png" class="lazyload" data-srcset="E:\MD-Images\image-20220502194519127.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220502194519127"> </p>
+<p><img src="D:\develop\MD-Images\image-20220502194519127.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220502194519127.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220502194519127"> </p>
 <h3 id="配置管理IP和Telnet"><a href="#配置管理IP和Telnet" class="headerlink" title="配置管理IP和Telnet"></a>配置管理IP和Telnet</h3><p>SW1:</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">SW2(config)#</span><span class="bash">int vlan 1</span></span><br><span class="line"><span class="meta">SW2(config-if)#</span><span class="bash">ip add 192.168.1.1 255.255.255.0</span></span><br><span class="line"><span class="meta">SW1(config)#</span><span class="bash"></span></span><br><span class="line"><span class="bash">SW1(config)<span class="comment">#ip default-gateway 192.168.1.254</span></span> </span><br><span class="line"><span class="meta">SW1(config)#</span><span class="bash">line vty 0 4</span></span><br><span class="line"><span class="meta">SW1(config-line)#</span><span class="bash">pass happy</span></span><br><span class="line"><span class="meta">SW1(config-line)#</span><span class="bash">login</span></span><br><span class="line"><span class="meta">SW1(config-line)#</span><span class="bash">transport input telnet</span> </span><br><span class="line"><span class="meta">SW1(config-line)#</span></span><br></pre></td></tr></table></figure>
 
@@ -2547,8 +2547,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">R1(config)#</span><span class="bash">int g0/0/0.3</span></span><br><span class="line"><span class="meta">R1(config-subif)#</span><span class="bash">encapsulation dot1Q 1</span></span><br><span class="line"><span class="meta">R1(config-subif)#</span><span class="bash">ip add 192.168.1.254 255.255.255.0</span></span><br></pre></td></tr></table></figure>
 
 <p>telnet 测试：</p>
-<p><img src="E:\MD-Images\image-20220502213546808.png" class="lazyload" data-srcset="E:\MD-Images\image-20220502213546808.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220502213546808"> </p>
-<p><img src="E:\MD-Images\image-20220502213835885.png" class="lazyload" data-srcset="E:\MD-Images\image-20220502213835885.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220502213835885"> </p>
+<p><img src="D:\develop\MD-Images\image-20220502213546808.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220502213546808.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220502213546808"> </p>
+<p><img src="D:\develop\MD-Images\image-20220502213835885.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220502213835885.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220502213835885"> </p>
 
   </div>
   
@@ -2573,10 +2573,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-05-02T21:38:38+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-07-26T14:12:30+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2022年5月2日</p>
+    <p>更新于：2023年7月26日</p>
   </a>
 </div>
 
@@ -3307,7 +3307,7 @@ PC1在LAN1中，P...</p>
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"学习记录","url":"https://username.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"单身一万年","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/","sameAs":["https://github.com/volantis-x"],"description":"学习和工作中的一些记录。"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://username.github.io/","name":"学习记录"}},{"@type":"ListItem","position":3,"item":{"@id":"https://username.github.io/2022/05/02/CCNA/CCNA实验07：单臂路由/","name":"CCNA实验07：单臂路由"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"学习记录","url":"https://username.github.io/","keywords":"Nerwork, Java, C/C++, Linux","description":"学习和工作中的一些记录。","author":{"@type":"Person","name":"单身一万年","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/","description":"学习和工作中的一些记录。"},"publisher":{"@type":"Organization","name":"学习记录","url":"https://username.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://username.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"CCNA实验07：单臂路由","description":"学习和工作中的一些记录。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://username.github.io/2022/05/02/CCNA/CCNA%E5%AE%9E%E9%AA%8C07%EF%BC%9A%E5%8D%95%E8%87%82%E8%B7%AF%E7%94%B1/"},"author":{"@type":"Person","name":"单身一万年","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/"},"publisher":{"@type":"Organization","name":"学习记录","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://username.github.io/2022/05/02/CCNA/CCNA%E5%AE%9E%E9%AA%8C07%EF%BC%9A%E5%8D%95%E8%87%82%E8%B7%AF%E7%94%B1/","wordCount":0,"datePublished":"2022-05-02T08:18:36.000Z","dateModified":"2022-05-02T13:38:38.000Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"学习记录","url":"https://username.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"a bit clumsy boy","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/","sameAs":["https://github.com/volantis-x"],"description":"学习和工作中的一些记录。"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://username.github.io/","name":"学习记录"}},{"@type":"ListItem","position":3,"item":{"@id":"https://username.github.io/2022/05/02/CCNA/CCNA实验07：单臂路由/","name":"CCNA实验07：单臂路由"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"学习记录","url":"https://username.github.io/","keywords":"Nerwork, Java, C/C++, Linux","description":"学习和工作中的一些记录。","author":{"@type":"Person","name":"a bit clumsy boy","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/","description":"学习和工作中的一些记录。"},"publisher":{"@type":"Organization","name":"学习记录","url":"https://username.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://username.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"CCNA实验07：单臂路由","description":"学习和工作中的一些记录。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://username.github.io/2022/05/02/CCNA/CCNA%E5%AE%9E%E9%AA%8C07%EF%BC%9A%E5%8D%95%E8%87%82%E8%B7%AF%E7%94%B1/"},"author":{"@type":"Person","name":"a bit clumsy boy","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/"},"publisher":{"@type":"Organization","name":"学习记录","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://username.github.io/2022/05/02/CCNA/CCNA%E5%AE%9E%E9%AA%8C07%EF%BC%9A%E5%8D%95%E8%87%82%E8%B7%AF%E7%94%B1/","wordCount":0,"datePublished":"2022-05-02T08:18:36.000Z","dateModified":"2023-07-26T06:12:30.619Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

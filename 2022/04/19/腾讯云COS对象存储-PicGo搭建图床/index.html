@@ -51,7 +51,7 @@
   <!-- 页面元数据 -->
   <title>腾讯云COS对象存储+PicGo搭建图床 - 学习记录</title>
   <meta name="keywords" content="Nerwork, Java, C/C++, Linux">
-  <meta desc name="description" content="学习和工作中的一些记录。 - 单身一万年 - 学习记录">
+  <meta desc name="description" content="学习和工作中的一些记录。 - a bit clumsy boy - 学习记录">
   
 <meta property="og:type" content="article">
 <meta property="og:title" content="腾讯云COS对象存储+PicGo搭建图床">
@@ -61,8 +61,8 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2022-04-19T14:19:16.000Z">
-<meta property="article:modified_time" content="2022-04-21T08:04:46.000Z">
-<meta property="article:author" content="单身一万年">
+<meta property="article:modified_time" content="2023-07-26T06:10:01.684Z">
+<meta property="article:author" content="a bit clumsy boy">
 <meta property="article:tag" content="Nerwork, Java, C&#x2F;C++, Linux">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -1645,9 +1645,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1690253052179),
+    lastupdate: new Date(1721210471577),
     sidebar: {
-      for_page: ["blogger","category","tagcloud","donate"],
+      for_page: ["blogger","category","tagcloud","donate","webinfo"],
       for_post: ["toc"],
       webinfo: {
         lastupd: {
@@ -2350,7 +2350,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='top'>
     
     
-      <p class="title">单身一万年的博客</p>
+      <p class="title">a bit clumsy boy</p>
     
     
   </div>
@@ -2442,7 +2442,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
   <a itemprop="url" class='author' href="/" rel="nofollow">
     <img itemprop="image" src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-    <p itemprop="name">请设置文章作者</p>
+    <p itemprop="name">a bit clumsy boy</p>
   </a>
 </div>
 
@@ -2493,21 +2493,21 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <h1 id="腾讯云COS对象存储-PicGo搭建图床"><a href="#腾讯云COS对象存储-PicGo搭建图床" class="headerlink" title="腾讯云COS对象存储+PicGo搭建图床"></a>腾讯云COS对象存储+PicGo搭建图床</h1><h2 id="搭建步骤"><a href="#搭建步骤" class="headerlink" title="搭建步骤"></a>搭建步骤</h2><h3 id="创建腾讯COS存储桶"><a href="#创建腾讯COS存储桶" class="headerlink" title="创建腾讯COS存储桶"></a>创建腾讯COS存储桶</h3><p>登录腾讯云打开控制台-&gt;云产品选择对象存储服务</p>
 <p><img src="https://imgs-1306244536.cos.ap-beijing.myqcloud.com//imgimage-20220419222131437.png" class="lazyload" data-srcset="https://imgs-1306244536.cos.ap-beijing.myqcloud.com//imgimage-20220419222131437.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220419222131437"> </p>
 <p>选择创建存储桶</p>
-<p><img src="E:\MD-Images\image-20220419222204200.png" class="lazyload" data-srcset="E:\MD-Images\image-20220419222204200.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220419222204200"> </p>
+<p><img src="D:\develop\MD-Images\image-20220419222204200.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220419222204200.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220419222204200"> </p>
 <p>填写信息完成存储桶创建，访问权限私有读写即可</p>
-<p><img src="E:\MD-Images\image-20220419222844673.png" class="lazyload" data-srcset="E:\MD-Images\image-20220419222844673.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220419222844673"> </p>
+<p><img src="D:\develop\MD-Images\image-20220419222844673.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220419222844673.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220419222844673"> </p>
 <p><strong>访问权限</strong>选择公共读私有写，地域离自己越近越好</p>
-<p><img src="E:\MD-Images\image-20220419222310903.png" class="lazyload" data-srcset="E:\MD-Images\image-20220419222310903.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220419222310903"></p>
+<p><img src="D:\develop\MD-Images\image-20220419222310903.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220419222310903.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220419222310903"></p>
 <h3 id="生成APPID、SecretId和SecretKey"><a href="#生成APPID、SecretId和SecretKey" class="headerlink" title="生成APPID、SecretId和SecretKey"></a>生成APPID、SecretId和SecretKey</h3><p>鼠标移动到头像，在弹出框中选择访问管理</p>
-<p><img src="E:\MD-Images\image-20220419223148466.png" class="lazyload" data-srcset="E:\MD-Images\image-20220419223148466.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220419223148466"> </p>
+<p><img src="D:\develop\MD-Images\image-20220419223148466.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220419223148466.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220419223148466"> </p>
 <p>在访问管理中选择访问密钥-&gt;API密钥管理</p>
-<p><img src="E:\MD-Images\image-20220419223327821.png" class="lazyload" data-srcset="E:\MD-Images\image-20220419223327821.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220419223327821"> </p>
+<p><img src="D:\develop\MD-Images\image-20220419223327821.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220419223327821.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220419223327821"> </p>
 <p>选择新建密钥即可生成SecretId和SecretKey和APPID</p>
-<p><img src="E:\MD-Images\image-20220419223408465.png" class="lazyload" data-srcset="E:\MD-Images\image-20220419223408465.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220419223408465"> </p>
+<p><img src="D:\develop\MD-Images\image-20220419223408465.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220419223408465.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220419223408465"> </p>
 <p>在PicGo中图床设置填写刚才生成的信息，并把COS版本设置为v5</p>
-<p><img src="E:\MD-Images\image-20220419224420475.png" class="lazyload" data-srcset="E:\MD-Images\image-20220419224420475.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220419224420475"> </p>
+<p><img src="D:\develop\MD-Images\image-20220419224420475.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220419224420475.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220419224420475"> </p>
 <p>其他信息在存储桶的基本信息当中</p>
-<p><img src="E:\MD-Images\image-20220419224320796.png" class="lazyload" data-srcset="E:\MD-Images\image-20220419224320796.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220419224320796"></p>
+<p><img src="D:\develop\MD-Images\image-20220419224320796.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220419224320796.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220419224320796"></p>
 
   </div>
   
@@ -2532,10 +2532,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-04-21T16:04:46+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-07-26T14:10:01+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2022年4月21日</p>
+    <p>更新于：2023年7月26日</p>
   </a>
 </div>
 
@@ -3251,7 +3251,7 @@ CIA三元组...</p>
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"学习记录","url":"https://username.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"单身一万年","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/","sameAs":["https://github.com/volantis-x"],"description":"学习和工作中的一些记录。"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://username.github.io/","name":"学习记录"}},{"@type":"ListItem","position":2,"item":{"@id":"https://username.github.io/categories/图床/","name":"图床"}},{"@type":"ListItem","position":3,"item":{"@id":"https://username.github.io/2022/04/19/腾讯云COS对象存储-PicGo搭建图床/","name":"腾讯云COS对象存储+PicGo搭建图床"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"学习记录","url":"https://username.github.io/","keywords":"Nerwork, Java, C/C++, Linux","description":"学习和工作中的一些记录。","author":{"@type":"Person","name":"单身一万年","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/","description":"学习和工作中的一些记录。"},"publisher":{"@type":"Organization","name":"学习记录","url":"https://username.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://username.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"腾讯云COS对象存储+PicGo搭建图床","description":"学习和工作中的一些记录。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://username.github.io/2022/04/19/%E8%85%BE%E8%AE%AF%E4%BA%91COS%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8-PicGo%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/"},"author":{"@type":"Person","name":"单身一万年","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/"},"publisher":{"@type":"Organization","name":"学习记录","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://username.github.io/2022/04/19/%E8%85%BE%E8%AE%AF%E4%BA%91COS%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8-PicGo%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/","wordCount":0,"datePublished":"2022-04-19T14:19:16.000Z","dateModified":"2022-04-21T08:04:46.000Z","articleSection":"图床","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"学习记录","url":"https://username.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"a bit clumsy boy","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/","sameAs":["https://github.com/volantis-x"],"description":"学习和工作中的一些记录。"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://username.github.io/","name":"学习记录"}},{"@type":"ListItem","position":2,"item":{"@id":"https://username.github.io/categories/图床/","name":"图床"}},{"@type":"ListItem","position":3,"item":{"@id":"https://username.github.io/2022/04/19/腾讯云COS对象存储-PicGo搭建图床/","name":"腾讯云COS对象存储+PicGo搭建图床"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"学习记录","url":"https://username.github.io/","keywords":"Nerwork, Java, C/C++, Linux","description":"学习和工作中的一些记录。","author":{"@type":"Person","name":"a bit clumsy boy","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/","description":"学习和工作中的一些记录。"},"publisher":{"@type":"Organization","name":"学习记录","url":"https://username.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://username.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"腾讯云COS对象存储+PicGo搭建图床","description":"学习和工作中的一些记录。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://username.github.io/2022/04/19/%E8%85%BE%E8%AE%AF%E4%BA%91COS%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8-PicGo%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/"},"author":{"@type":"Person","name":"a bit clumsy boy","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/"},"publisher":{"@type":"Organization","name":"学习记录","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://username.github.io/2022/04/19/%E8%85%BE%E8%AE%AF%E4%BA%91COS%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8-PicGo%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/","wordCount":0,"datePublished":"2022-04-19T14:19:16.000Z","dateModified":"2023-07-26T06:10:01.684Z","articleSection":"图床","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

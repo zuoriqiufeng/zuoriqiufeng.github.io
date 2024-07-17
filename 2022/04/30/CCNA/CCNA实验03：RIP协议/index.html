@@ -51,7 +51,7 @@
   <!-- 页面元数据 -->
   <title>CCNA实验03：RIP协议 - 学习记录</title>
   <meta name="keywords" content="CCNA,RIP,Nerwork, Java, C/C++, Linux">
-  <meta desc name="description" content="学习和工作中的一些记录。 - 单身一万年 - 学习记录">
+  <meta desc name="description" content="学习和工作中的一些记录。 - a bit clumsy boy - 学习记录">
   
 <meta property="og:type" content="article">
 <meta property="og:title" content="CCNA实验03：RIP协议">
@@ -61,8 +61,8 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2022-04-30T08:17:35.000Z">
-<meta property="article:modified_time" content="2023-07-24T09:02:32.878Z">
-<meta property="article:author" content="单身一万年">
+<meta property="article:modified_time" content="2023-07-26T06:12:12.147Z">
+<meta property="article:author" content="a bit clumsy boy">
 <meta property="article:tag" content="CCNA">
 <meta property="article:tag" content="RIP">
 <meta name="twitter:card" content="summary">
@@ -1646,9 +1646,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1690253052179),
+    lastupdate: new Date(1721210471577),
     sidebar: {
-      for_page: ["blogger","category","tagcloud","donate"],
+      for_page: ["blogger","category","tagcloud","donate","webinfo"],
       for_post: ["toc"],
       webinfo: {
         lastupd: {
@@ -2351,7 +2351,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='top'>
     
     
-      <p class="title">单身一万年的博客</p>
+      <p class="title">a bit clumsy boy</p>
     
     
   </div>
@@ -2443,7 +2443,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
   <a itemprop="url" class='author' href="/" rel="nofollow">
     <img itemprop="image" src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-    <p itemprop="name">请设置文章作者</p>
+    <p itemprop="name">a bit clumsy boy</p>
   </a>
 </div>
 
@@ -2496,7 +2496,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li>掌握RIPv2的基本配置</li>
 <li>了解RIP手动汇总、协议认证、默认路由分发</li>
 </ol>
-<h2 id="拓扑与需求"><a href="#拓扑与需求" class="headerlink" title="拓扑与需求"></a>拓扑与需求</h2><h3 id="拓扑"><a href="#拓扑" class="headerlink" title="拓扑"></a>拓扑</h3><p><img src="E:\MD-Images\image-20220430220116008.png" class="lazyload" data-srcset="E:\MD-Images\image-20220430220116008.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220430220116008"> </p>
+<h2 id="拓扑与需求"><a href="#拓扑与需求" class="headerlink" title="拓扑与需求"></a>拓扑与需求</h2><h3 id="拓扑"><a href="#拓扑" class="headerlink" title="拓扑"></a>拓扑</h3><p><img src="D:\develop\MD-Images\image-20220430220116008.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220430220116008.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220430220116008"> </p>
 <h3 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h3><ol>
 <li>配置接口IP实现直连设备之间能互相通信</li>
 <li>PC1在LAN1中，PC2在LAN2中，分别配置RIPv1和RIPv2，掌握V1和V2的区别</li>
@@ -2514,8 +2514,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">R3&gt;</span><span class="bash"><span class="built_in">enable</span></span></span><br><span class="line"><span class="meta">R3#</span><span class="bash">conf ter</span></span><br><span class="line"><span class="meta">R3(config)#</span><span class="bash">host R3</span></span><br><span class="line"><span class="meta">R3(config)#</span><span class="bash">int g0/0/1</span></span><br><span class="line"><span class="meta">R3(config-if)#</span><span class="bash">ip add 10.23.23.2 255.255.255.0</span></span><br><span class="line"><span class="meta">R3(config-if)#</span><span class="bash">no shut</span></span><br><span class="line"><span class="meta">R3(config-if)#</span><span class="bash">int g0/0/0</span></span><br><span class="line"><span class="meta">R3(config-if)#</span><span class="bash">ip add 10.10.20.254 255.255.255.0</span></span><br><span class="line"><span class="meta">R3(config-if)#</span><span class="bash">no shut</span></span><br><span class="line"><span class="meta">R3(config-if)#</span><span class="bash"><span class="built_in">exit</span></span></span><br></pre></td></tr></table></figure>
 
 <p>直连连通性测试：</p>
-<p><img src="E:\MD-Images\image-20220430164612550.png" class="lazyload" data-srcset="E:\MD-Images\image-20220430164612550.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220430164612550"> </p>
-<p><img src="E:\MD-Images\image-20220430164639631.png" class="lazyload" data-srcset="E:\MD-Images\image-20220430164639631.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220430164639631"> </p>
+<p><img src="D:\develop\MD-Images\image-20220430164612550.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220430164612550.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220430164612550"> </p>
+<p><img src="D:\develop\MD-Images\image-20220430164639631.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220430164639631.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220430164639631"> </p>
 <h3 id="配置RIP"><a href="#配置RIP" class="headerlink" title="配置RIP"></a>配置RIP</h3><ol>
 <li>在R1上配置RIPv1，在R2上配置RIPv2</li>
 </ol>
@@ -2527,9 +2527,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <p>在特权模式下使用debug ip rip命令，调试rip协议</p>
 <p>R1:</p>
-<p><img src="E:\MD-Images\image-20220430171339002.png" class="lazyload" data-srcset="E:\MD-Images\image-20220430171339002.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220430171339002"> </p>
+<p><img src="D:\develop\MD-Images\image-20220430171339002.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220430171339002.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220430171339002"> </p>
 <p>R2:</p>
-<p><img src="E:\MD-Images\image-20220430171414737.png" class="lazyload" data-srcset="E:\MD-Images\image-20220430171414737.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220430171414737"> </p>
+<p><img src="D:\develop\MD-Images\image-20220430171414737.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220430171414737.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220430171414737"> </p>
 <p>对比发现，RIPv1发送链路信息使用广播地址发送，而RIPv2发送地址使用组播地址发送，同时RIPv1和RIPv2并不互通，双方会自动忽略掉来自不同版本RIP的链路信息</p>
 <h3 id="配置R3的环回口，宣告RIP并进行汇总"><a href="#配置R3的环回口，宣告RIP并进行汇总" class="headerlink" title="配置R3的环回口，宣告RIP并进行汇总"></a>配置R3的环回口，宣告RIP并进行汇总</h3><p>配置代码：</p>
 <p>R3:</p>
@@ -2564,10 +2564,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-07-24T17:02:32+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-07-26T14:12:12+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2023年7月24日</p>
+    <p>更新于：2023年7月26日</p>
   </a>
 </div>
 
@@ -3298,7 +3298,7 @@ PC0为VPCS设备，PC1为路由...</p>
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"学习记录","url":"https://username.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"单身一万年","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/","sameAs":["https://github.com/volantis-x"],"description":"学习和工作中的一些记录。"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://username.github.io/","name":"学习记录"}},{"@type":"ListItem","position":2,"item":{"@id":"https://username.github.io/categories/CCNA学习/","name":"CCNA学习"}},{"@type":"ListItem","position":3,"item":{"@id":"https://username.github.io/2022/04/30/CCNA/CCNA实验03：RIP协议/","name":"CCNA实验03：RIP协议"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"学习记录","url":"https://username.github.io/","keywords":"Nerwork, Java, C/C++, Linux","description":"学习和工作中的一些记录。","author":{"@type":"Person","name":"单身一万年","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/","description":"学习和工作中的一些记录。"},"publisher":{"@type":"Organization","name":"学习记录","url":"https://username.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://username.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"CCNA实验03：RIP协议","description":"学习和工作中的一些记录。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://username.github.io/2022/04/30/CCNA/CCNA%E5%AE%9E%E9%AA%8C03%EF%BC%9ARIP%E5%8D%8F%E8%AE%AE/"},"author":{"@type":"Person","name":"单身一万年","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/"},"publisher":{"@type":"Organization","name":"学习记录","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://username.github.io/2022/04/30/CCNA/CCNA%E5%AE%9E%E9%AA%8C03%EF%BC%9ARIP%E5%8D%8F%E8%AE%AE/","wordCount":0,"datePublished":"2022-04-30T08:17:35.000Z","dateModified":"2023-07-24T09:02:32.878Z","articleSection":"CCNA学习","keywords":"CCNA,RIP","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"学习记录","url":"https://username.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"a bit clumsy boy","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/","sameAs":["https://github.com/volantis-x"],"description":"学习和工作中的一些记录。"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://username.github.io/","name":"学习记录"}},{"@type":"ListItem","position":2,"item":{"@id":"https://username.github.io/categories/CCNA学习/","name":"CCNA学习"}},{"@type":"ListItem","position":3,"item":{"@id":"https://username.github.io/2022/04/30/CCNA/CCNA实验03：RIP协议/","name":"CCNA实验03：RIP协议"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"学习记录","url":"https://username.github.io/","keywords":"Nerwork, Java, C/C++, Linux","description":"学习和工作中的一些记录。","author":{"@type":"Person","name":"a bit clumsy boy","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/","description":"学习和工作中的一些记录。"},"publisher":{"@type":"Organization","name":"学习记录","url":"https://username.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://username.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"CCNA实验03：RIP协议","description":"学习和工作中的一些记录。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://username.github.io/2022/04/30/CCNA/CCNA%E5%AE%9E%E9%AA%8C03%EF%BC%9ARIP%E5%8D%8F%E8%AE%AE/"},"author":{"@type":"Person","name":"a bit clumsy boy","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/"},"publisher":{"@type":"Organization","name":"学习记录","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://username.github.io/2022/04/30/CCNA/CCNA%E5%AE%9E%E9%AA%8C03%EF%BC%9ARIP%E5%8D%8F%E8%AE%AE/","wordCount":0,"datePublished":"2022-04-30T08:17:35.000Z","dateModified":"2023-07-26T06:12:12.147Z","articleSection":"CCNA学习","keywords":"CCNA,RIP","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

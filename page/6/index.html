@@ -51,7 +51,7 @@
   <!-- 页面元数据 -->
   <title>学习记录</title>
   <meta name="keywords" content="Nerwork, Java, C/C++, Linux">
-  <meta desc name="description" content="学习和工作中的一些记录。 - 单身一万年 - 学习记录">
+  <meta desc name="description" content="学习和工作中的一些记录。 - a bit clumsy boy - 学习记录">
   
 <meta property="og:type" content="website">
 <meta property="og:title" content="学习记录">
@@ -60,7 +60,7 @@
 <meta property="og:description" content="学习和工作中的一些记录。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:author" content="单身一万年">
+<meta property="article:author" content="a bit clumsy boy">
 <meta property="article:tag" content="Nerwork, Java, C&#x2F;C++, Linux">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -1643,9 +1643,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1690253052179),
+    lastupdate: new Date(1721210471577),
     sidebar: {
-      for_page: ["blogger","category","tagcloud","donate"],
+      for_page: ["blogger","category","tagcloud","donate","webinfo"],
       for_post: ["toc"],
       webinfo: {
         lastupd: {
@@ -2348,7 +2348,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='top'>
     
     
-      <p class="title">单身一万年的博客</p>
+      <p class="title">a bit clumsy boy</p>
     
     
   </div>
@@ -2417,7 +2417,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://username.github.io/2022/04/14/web安全/Web安全与渗透测试实验03：SQL注入/">
+  <link itemprop="mainEntityOfPage" href="https://username.github.io/2022/04/20/网络安全/网络安全学习01：概述/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="学习记录">
   </span>
@@ -2435,25 +2435,26 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/04/14/web%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8%E4%B8%8E%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AE%9E%E9%AA%8C03%EF%BC%9ASQL%E6%B3%A8%E5%85%A5/"  itemprop="url">
-        Web安全与渗透测试：SQL注入实验
+      <a href="/2022/04/20/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%AD%A6%E4%B9%A001%EF%BC%9A%E6%A6%82%E8%BF%B0/"  itemprop="url">
+        网络安全学习01：概述
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        SQL注入实验实验目的
-了解SQL注入的基本概念
-掌握SQL注入的攻击原理
-掌握SQL注入的操作流程
-了解数字型SQL注入和字符型SQL注入的区别
+        网络安全学习01：概述1.1 计算机安全计算机安全：对某个自动化信息系统的保护措施，其目的在于实现信息系统的资源的完整性、可用性以及机密性（包括硬件、软件、固件、信息/数据、电信）
+CIA三元组：
 
-实验环境
-操作系统：Kali-Linux
-实验工具：WebScarab、WebGoat7.1
+机密性：
 
-SQL注入 SQL注入是一种执行恶意SQL命令的注入攻击。攻击者通过把特殊的输入符号作为参数传入到Web应用程序中，这些输入大都是SQL语法里的一些...
+数据机密性：保证私有的或机密的信息不会被泄露给未经授权的个体
+隐私性：保证个人可以控制和影响与之相关的信息，这些信息有可能被收集、存储和泄密
+
+
+完整性：
+
+数据完整性：保证只能由某...
       
     
   </div>
@@ -2461,20 +2462,20 @@ SQL注入 SQL注入是一种执行恶意SQL命令的注入攻击。攻击者通�
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time itemprop="dateCreated datePublished" datetime="2022-04-14T16:44:26+08:00">2022-04-14</time>
+        <time itemprop="dateCreated datePublished" datetime="2022-04-20T13:46:48+08:00">2022-04-20</time>
         
           <span class="dot"></span>
-          <a class="category-link" href="/categories/Web%E5%AE%89%E5%85%A8%E4%B8%8E%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AE%9E%E9%AA%8C/">Web安全与渗透测试实验</a>
+          <a class="category-link" href="/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/">网络安全</a>
           
             <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/Web%E5%AE%89%E5%85%A8%E4%B8%8E%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AE%9E%E9%AA%8C/" itemprop="url"><span itemprop="name">Web安全与渗透测试实验</span></a>
+              <a href="/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" itemprop="url"><span itemprop="name">网络安全</span></a>
             </span>
           
         
       </div>
       
         <div>
-          <a class='readmore' href='/2022/04/14/web%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8%E4%B8%8E%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AE%9E%E9%AA%8C03%EF%BC%9ASQL%E6%B3%A8%E5%85%A5/' itemprop="url">
+          <a class='readmore' href='/2022/04/20/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%AD%A6%E4%B9%A001%EF%BC%9A%E6%A6%82%E8%BF%B0/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -2490,7 +2491,7 @@ SQL注入 SQL注入是一种执行恶意SQL命令的注入攻击。攻击者通�
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://username.github.io/2022/04/13/iptabls学习/">
+  <link itemprop="mainEntityOfPage" href="https://username.github.io/2022/04/19/腾讯云COS对象存储-PicGo搭建图床/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="学习记录">
   </span>
@@ -2508,16 +2509,27 @@ SQL注入 SQL注入是一种执行恶意SQL命令的注入攻击。攻击者通�
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/04/13/iptabls%E5%AD%A6%E4%B9%A0/"  itemprop="url">
-        iptabls学习
+      <a href="/2022/04/19/%E8%85%BE%E8%AE%AF%E4%BA%91COS%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8-PicGo%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/"  itemprop="url">
+        腾讯云COS对象存储+PicGo搭建图床
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        iptables 学习简介iptables - IPv4 包过滤和 NAT 的管理工具 。用于设置、维护和检查 Linux 内核中的 IP 包过滤规则表。可以定义几个不同的表。每个表包含许多内置链，也可能包含用户定义的链。每个链是一个规则列表，可以匹配一组数据包。每个规则都指定如何处理匹配的数据包。这称为“目标”，它可能是到同一个表中用户定义的链的跳转。
+        腾讯云COS对象存储+PicGo搭建图床搭建步骤创建腾讯COS存储桶登录腾讯云打开控制台-&gt;云产品选择对象存储服务
+ 
+选择创建存储桶
+ 
+填写信息完成存储桶创建，访问权限私有读写即可
+ 
+访问权限选择公共读私有写，地域离自己越近越好
 
+生成APPID、SecretId和SecretKey鼠标移动到头像，在弹出框中选择访问管理
+ 
+在访问管理中选择访问密钥-&gt;API密钥管理
+ 
+...
       
     
   </div>
@@ -2525,20 +2537,20 @@ SQL注入 SQL注入是一种执行恶意SQL命令的注入攻击。攻击者通�
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time itemprop="dateCreated datePublished" datetime="2022-04-13T21:46:13+08:00">2022-04-13</time>
+        <time itemprop="dateCreated datePublished" datetime="2022-04-19T22:19:16+08:00">2022-04-19</time>
         
           <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a>
+          <a class="category-link" href="/categories/%E5%9B%BE%E5%BA%8A/">图床</a>
           
             <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url"><span itemprop="name">学习笔记</span></a>
+              <a href="/categories/%E5%9B%BE%E5%BA%8A/" itemprop="url"><span itemprop="name">图床</span></a>
             </span>
           
         
       </div>
       
         <div>
-          <a class='readmore' href='/2022/04/13/iptabls%E5%AD%A6%E4%B9%A0/' itemprop="url">
+          <a class='readmore' href='/2022/04/19/%E8%85%BE%E8%AE%AF%E4%BA%91COS%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8-PicGo%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -2554,7 +2566,7 @@ SQL注入 SQL注入是一种执行恶意SQL命令的注入攻击。攻击者通�
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://username.github.io/2022/04/13/Docker/Docker学习笔记/">
+  <link itemprop="mainEntityOfPage" href="https://username.github.io/2022/04/19/解决VMware中WindowsServer2016无法安装Hyper-V的问题/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="学习记录">
   </span>
@@ -2572,88 +2584,28 @@ SQL注入 SQL注入是一种执行恶意SQL命令的注入攻击。攻击者通�
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/04/13/Docker/Docker%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"  itemprop="url">
-        Docker学习笔记
+      <a href="/2022/04/19/%E8%A7%A3%E5%86%B3VMware%E4%B8%ADWindowsServer2016%E6%97%A0%E6%B3%95%E5%AE%89%E8%A3%85Hyper-V%E7%9A%84%E9%97%AE%E9%A2%98/"  itemprop="url">
+        解决VMware中WindowsServer2016无法安装Hyper-V的问题
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        [toc]
-Docker 学习笔记Docker 简介Docker 最初是 dotCloud 公司创始人 Solomon Hykes 在法国期间发起的一个公司内部项目，它是基于 dotCloud 公司多年云服务技术的一次革新，并于 2013 年 3 月以 Apache 2.0 授权协议开源，主要项目代码在 GitHub 上进行维护。Docker 项目后来还加入了 Linux 基金会，并成立推动...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-04-13T20:08:23+08:00">2022-04-13</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url"><span itemprop="name">学习笔记</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2022/04/13/Docker/Docker%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://username.github.io/2022/04/13/Kali_linux/Kali-linux安装Docker/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="学习记录">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="学习记录">
-    <meta itemprop="description" content="学习和工作中的一些记录。">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/04/13/Kali_linux/Kali-linux%E5%AE%89%E8%A3%85Docker/"  itemprop="url">
-        Kali-linux安装Docker
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        Kali-linux安装Docker步骤
-安装依赖包
-
-123456sudo apt-get updatesudo apt-get install \    ca-certificates \    curl \    gnupg \    lsb-release
+        解决VMware中WindowsServer2016无法安装Hyper-V的问题问题在VMware安装的 WindowsServer2016中无法安装Hyper-v
+ 
+解决方法
+打开虚拟机设置，勾选处理器支持虚拟化
 
  
 
-添加GPG密钥：
+找到WindowsServer2016的虚拟机配置文件(.vmx)
 
-1curl -fsSL https://download.docker.com/linux/debi...
+ 
+
+使用记事本打开配置文件，并在末尾添加：
+
+123hypervisor.cpuid.v0 = ...
       
     
   </div>
@@ -2661,7 +2613,316 @@ Docker 学习笔记Docker 简介Docker 最初是 dotCloud 公司创始人 Solomo
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time itemprop="dateCreated datePublished" datetime="2022-04-13T19:10:07+08:00">2022-04-13</time>
+        <time itemprop="dateCreated datePublished" datetime="2022-04-19T12:54:17+08:00">2022-04-19</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2022/04/19/%E8%A7%A3%E5%86%B3VMware%E4%B8%ADWindowsServer2016%E6%97%A0%E6%B3%95%E5%AE%89%E8%A3%85Hyper-V%E7%9A%84%E9%97%AE%E9%A2%98/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://username.github.io/2022/04/18/C语言学习/Windows安装MinGW/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="学习记录">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="学习记录">
+    <meta itemprop="description" content="学习和工作中的一些记录。">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2022/04/18/C%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/Windows%E5%AE%89%E8%A3%85MinGW/"  itemprop="url">
+        Windows安装MinGW
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        Windows安装MinGWMinGW安装
+打开[MinGW官网][https://osdn.net/projects/mingw/]，下载MinGW安装包
+
+ 
+
+  打开安装包 mingw-get-setup.exe 进行下载
+
+ 
+
+这里可以更改安装路径
+
+ 
+
+确定路径之后，点击continue开始下载
+
+ 
+
+安装完成之后点击Continuel，我们会得到一个名为 “MinGW I...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2022-04-18T19:53:22+08:00">2022-04-18</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/Windows-C-C-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">Windows C/C++环境搭建</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/Windows-C-C-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" itemprop="url"><span itemprop="name">Windows C/C++环境搭建</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2022/04/18/C%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/Windows%E5%AE%89%E8%A3%85MinGW/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://username.github.io/2022/04/17/Windows系统C盘清理方案/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="学习记录">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="学习记录">
+    <meta itemprop="description" content="学习和工作中的一些记录。">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2022/04/17/Windows%E7%B3%BB%E7%BB%9FC%E7%9B%98%E6%B8%85%E7%90%86%E6%96%B9%E6%A1%88/"  itemprop="url">
+        Windows系统C盘清理方案
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        Windows系统C盘清理方案方案1 - 清理缓存文件
+Win+R 键打开运行框
+
+ 
+
+输入%temp%打开缓存文件夹
+
+ 
+ 
+
+
+上面出现出现的文件夹中文件都可以删除
+
+ 
+
+方案2 - 清理系统更新文件
+右键C盘选择属性
+
+ 
+
+选择常规-&gt;磁盘清理
+
+ 
+
+选择清理系统文件
+
+ 
+
+勾选系统更新文件之后点击确定
+
+ 
+
+清理成功
+
+ 
+方案3 - 更改桌面等默认文件夹的路径
+...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2022-04-17T13:39:24+08:00">2022-04-17</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/Windows%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0/">Windows系统学习</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/Windows%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0/" itemprop="url"><span itemprop="name">Windows系统学习</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2022/04/17/Windows%E7%B3%BB%E7%BB%9FC%E7%9B%98%E6%B8%85%E7%90%86%E6%96%B9%E6%A1%88/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://username.github.io/2022/04/16/Kali-linux/Kali-Linux部署WebGoat-7-1/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="学习记录">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="学习记录">
+    <meta itemprop="description" content="学习和工作中的一些记录。">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2022/04/16/Kali-linux/Kali-Linux%E9%83%A8%E7%BD%B2WebGoat-7-1/"  itemprop="url">
+        Kali-Linux部署WebGoat-7.1
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        Kali-Linux部署WebGoat-7.1描述这里使用Docker部署，如果想用Release部署，直接去WebGoat的GitHub上下载对应版本jar包，然后使用java命令运行即可
+步骤
+安装Docker
+
+参考我的Kali-Linux部署Docker一文，或者查看Kali-Linux官方文档
+
+部署WebGoat7.1
+
+12docker pull webgoat/webgoat...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2022-04-16T16:26:52+08:00">2022-04-16</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2022/04/16/Kali-linux/Kali-Linux%E9%83%A8%E7%BD%B2WebGoat-7-1/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://username.github.io/2022/04/16/Kali-linux/Kali-Linux更新Firefox/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="学习记录">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="学习记录">
+    <meta itemprop="description" content="学习和工作中的一些记录。">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2022/04/16/Kali-linux/Kali-Linux%E6%9B%B4%E6%96%B0Firefox/"  itemprop="url">
+        Kali-Linux更新Firefox
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        Kali-Linux更新Firefox描述Firefox浏览器是Kali-Linux系统自带的浏览器，但是可能版本过低，需要更新才能满足需求
+更新步骤
+官网下载最新版本
+
+http://www.firefox.com.cn/download/  
+
+解压文件
+
+12cd Download tar -jxvf Firefox-latest-x86_64.tar.bz2 
+
+   
+
+删除原本的...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2022-04-16T16:22:06+08:00">2022-04-16</time>
         
           <span class="dot"></span>
           <a class="category-link" href="/categories/Kali-Linux%E5%AD%A6%E4%B9%A0/">Kali-Linux学习</a>
@@ -2674,7 +2935,7 @@ Docker 学习笔记Docker 简介Docker 最初是 dotCloud 公司创始人 Solomo
       </div>
       
         <div>
-          <a class='readmore' href='/2022/04/13/Kali_linux/Kali-linux%E5%AE%89%E8%A3%85Docker/' itemprop="url">
+          <a class='readmore' href='/2022/04/16/Kali-linux/Kali-Linux%E6%9B%B4%E6%96%B0Firefox/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -2690,7 +2951,7 @@ Docker 学习笔记Docker 简介Docker 最初是 dotCloud 公司创始人 Solomo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://username.github.io/2022/04/13/Kali_linux/Kali-linux换源/">
+  <link itemprop="mainEntityOfPage" href="https://username.github.io/2022/04/15/Win10解决自动设置本地流量不走代理/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="学习记录">
   </span>
@@ -2708,19 +2969,15 @@ Docker 学习笔记Docker 简介Docker 最初是 dotCloud 公司创始人 Solomo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/04/13/Kali_linux/Kali-linux%E6%8D%A2%E6%BA%90/"  itemprop="url">
-        Kali-linux换源
+      <a href="/2022/04/15/Win10%E8%A7%A3%E5%86%B3%E8%87%AA%E5%8A%A8%E8%AE%BE%E7%BD%AE%E6%9C%AC%E5%9C%B0%E6%B5%81%E9%87%8F%E4%B8%8D%E8%B5%B0%E4%BB%A3%E7%90%86/"  itemprop="url">
+        Win10解决自动设置本地流量不走代理
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        Kali-linux换源步骤1sudo vim /etc/apt/sources.list
-
- 
-注释掉换成国内的源：
-123456789101112131415161718192021222324官方源deb http://http.kali.org/kali kali-rolling main non-free contribdeb-src http://http.kali.org/ka...
+        Win10解决自动设置本地流量不走代理
       
     
   </div>
@@ -2728,20 +2985,87 @@ Docker 学习笔记Docker 简介Docker 最初是 dotCloud 公司创始人 Solomo
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time itemprop="dateCreated datePublished" datetime="2022-04-13T19:09:39+08:00">2022-04-13</time>
+        <time itemprop="dateCreated datePublished" datetime="2022-04-15T21:17:23+08:00">2022-04-15</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2022/04/15/Win10%E8%A7%A3%E5%86%B3%E8%87%AA%E5%8A%A8%E8%AE%BE%E7%BD%AE%E6%9C%AC%E5%9C%B0%E6%B5%81%E9%87%8F%E4%B8%8D%E8%B5%B0%E4%BB%A3%E7%90%86/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://username.github.io/2022/04/15/问题记录/Firefox解决无法抓取本地流量问题/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="学习记录">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="学习记录">
+    <meta itemprop="description" content="学习和工作中的一些记录。">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2022/04/15/%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/Firefox%E8%A7%A3%E5%86%B3%E6%97%A0%E6%B3%95%E6%8A%93%E5%8F%96%E6%9C%AC%E5%9C%B0%E6%B5%81%E9%87%8F%E9%97%AE%E9%A2%98/"  itemprop="url">
+        Firefox解决无法抓取本地流量问题
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        Firefox解决无法抓取本地流量问题描述Firefox升级之后，默认设置为本地流量不走代理：
+ 
+解决是由于Firefox的默认本地流量走代理的设置默认为false，修改成true即可
+
+在Firefox中url栏输入about:config进入配置页面
+
+ 
+
+搜索 network.proxy.allow_hijacking_localhost
+
+ 
+双击设置成true即可
+
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2022-04-15T15:20:56+08:00">2022-04-15</time>
         
           <span class="dot"></span>
-          <a class="category-link" href="/categories/Kali-Linux%E5%AD%A6%E4%B9%A0/">Kali-Linux学习</a>
+          <a class="category-link" href="/categories/%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/">问题记录</a>
           
             <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/Kali-Linux%E5%AD%A6%E4%B9%A0/" itemprop="url"><span itemprop="name">Kali-Linux学习</span></a>
+              <a href="/categories/%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/" itemprop="url"><span itemprop="name">问题记录</span></a>
             </span>
           
         
       </div>
       
         <div>
-          <a class='readmore' href='/2022/04/13/Kali_linux/Kali-linux%E6%8D%A2%E6%BA%90/' itemprop="url">
+          <a class='readmore' href='/2022/04/15/%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/Firefox%E8%A7%A3%E5%86%B3%E6%97%A0%E6%B3%95%E6%8A%93%E5%8F%96%E6%9C%AC%E5%9C%B0%E6%B5%81%E9%87%8F%E9%97%AE%E9%A2%98/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -2757,7 +3081,7 @@ Docker 学习笔记Docker 简介Docker 最初是 dotCloud 公司创始人 Solomo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://username.github.io/2022/04/10/CCNA/路由与交换：Cisco交换机配置文件与系统备份与恢复/">
+  <link itemprop="mainEntityOfPage" href="https://username.github.io/2022/04/14/数据库/Mysql学习/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="学习记录">
   </span>
@@ -2775,81 +3099,8 @@ Docker 学习笔记Docker 简介Docker 最初是 dotCloud 公司创始人 Solomo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/04/10/CCNA/%E8%B7%AF%E7%94%B1%E4%B8%8E%E4%BA%A4%E6%8D%A2%EF%BC%9ACisco%E4%BA%A4%E6%8D%A2%E6%9C%BA%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%A4%87%E4%BB%BD%E4%B8%8E%E6%81%A2%E5%A4%8D/"  itemprop="url">
-        路由与交换：Cisco交换机配置文件与系统备份与恢复
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        Cisco交换机配置文件与系统备份与恢复网络拓扑图 
-配置服务器配置
-配置IP地址
-
- 
-
-开启TFTP
-
- 
-交换机配置 
-1234567891011Switch&gt;enable Switch#conf terminal Switch(config)#hostname S1 // 配置名称S1(config)#line vty 0 5S1(config-line)#password h...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-04-10T20:22:44+08:00">2022-04-10</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/CCNA/">CCNA</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/CCNA/" itemprop="url"><span itemprop="name">CCNA</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2022/04/10/CCNA/%E8%B7%AF%E7%94%B1%E4%B8%8E%E4%BA%A4%E6%8D%A2%EF%BC%9ACisco%E4%BA%A4%E6%8D%A2%E6%9C%BA%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%A4%87%E4%BB%BD%E4%B8%8E%E6%81%A2%E5%A4%8D/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://username.github.io/2022/04/09/科来网络分析系统学习1/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="学习记录">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="学习记录">
-    <meta itemprop="description" content="学习和工作中的一些记录。">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/04/09/%E7%A7%91%E6%9D%A5%E7%BD%91%E7%BB%9C%E5%88%86%E6%9E%90%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A01/"  itemprop="url">
-        科来网络分析系统学习1
+      <a href="/2022/04/14/%E6%95%B0%E6%8D%AE%E5%BA%93/Mysql%E5%AD%A6%E4%B9%A0/"  itemprop="url">
+        Mysql学习
       </a>
     </h2>
   
@@ -2860,170 +3111,12 @@ Docker 学习笔记Docker 简介Docker 最初是 dotCloud 公司创始人 Solomo
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time itemprop="dateCreated datePublished" datetime="2022-04-09T13:29:42+08:00">2022-04-09</time>
+        <time itemprop="dateCreated datePublished" datetime="2022-04-14T20:48:32+08:00">2022-04-14</time>
         
       </div>
       
         <div>
-          <a class='readmore' href='/2022/04/09/%E7%A7%91%E6%9D%A5%E7%BD%91%E7%BB%9C%E5%88%86%E6%9E%90%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A01/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://username.github.io/2022/04/09/Wireshark学习1/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="学习记录">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="学习记录">
-    <meta itemprop="description" content="学习和工作中的一些记录。">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/04/09/Wireshark%E5%AD%A6%E4%B9%A01/"  itemprop="url">
-        Wireshark学习1
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        Wireshark学习 1技巧抓包只抓必要的部分，比如只抓包头
-
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-04-09T13:29:18+08:00">2022-04-09</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2022/04/09/Wireshark%E5%AD%A6%E4%B9%A01/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://username.github.io/2022/04/08/DCE-RPC协议/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="学习记录">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="学习记录">
-    <meta itemprop="description" content="学习和工作中的一些记录。">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/04/08/DCE-RPC%E5%8D%8F%E8%AE%AE/"  itemprop="url">
-        DCE/RPC协议
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-04-08T23:03:52+08:00">2022-04-08</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2022/04/08/DCE-RPC%E5%8D%8F%E8%AE%AE/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://username.github.io/2022/04/08/SMB协议/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="学习记录">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="学习记录">
-    <meta itemprop="description" content="学习和工作中的一些记录。">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/04/08/SMB%E5%8D%8F%E8%AE%AE/"  itemprop="url">
-        SMB协议
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-04-08T23:03:41+08:00">2022-04-08</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2022/04/08/SMB%E5%8D%8F%E8%AE%AE/' itemprop="url">
+          <a class='readmore' href='/2022/04/14/%E6%95%B0%E6%8D%AE%E5%BA%93/Mysql%E5%AD%A6%E4%B9%A0/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -3050,7 +3143,7 @@ Docker 学习笔记Docker 简介Docker 最初是 dotCloud 公司创始人 Solomo
           </a>
         
         <p class="current">
-          6 / 8
+          6 / 9
         </p>
         
           <a class="next" rel="next" href="/page/7/">
@@ -3188,7 +3281,7 @@ Docker 学习笔记Docker 简介Docker 最初是 dotCloud 公司创始人 Solomo
           <li><a class="flat-box"
             title="/categories/Web%E5%AE%89%E5%85%A8%E4%B8%8E%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AE%9E%E9%AA%8C/" href="/categories/Web%E5%AE%89%E5%85%A8%E4%B8%8E%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AE%9E%E9%AA%8C/"
             active-action="action-categoriesWebE5AE89E585A8E4B88EE6B897E9808FE6B58BE8AF95E5AE9EE9AA8C"
-            ><div class='name'>Web安全与渗透测试实验</div><div class='badge'>(6)</div></a></li>
+            ><div class='name'>Web安全与渗透测试实验</div><div class='badge'>(5)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/Windows-C-C-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" href="/categories/Windows-C-C-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"
@@ -3199,6 +3292,11 @@ Docker 学习笔记Docker 简介Docker 最初是 dotCloud 公司创始人 Solomo
             title="/categories/Windows%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0/" href="/categories/Windows%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0/"
             active-action="action-categoriesWindowsE7B3BBE7BB9FE5ADA6E4B9A0"
             ><div class='name'>Windows系统学习</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/git/" href="/categories/git/"
+            active-action="action-categoriesgit"
+            ><div class='name'>git</div><div class='badge'>(1)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"
@@ -3214,6 +3312,16 @@ Docker 学习笔记Docker 简介Docker 最初是 dotCloud 公司创始人 Solomo
             title="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"
             active-action="action-categoriesE5ADA6E4B9A0E7AC94E8AEB0"
             ><div class='name'>学习笔记</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"
+            active-action="action-categoriesE695B0E68DAEE5BA93"
+            ><div class='name'>数据库</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/oracle/" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/oracle/"
+            active-action="action-categoriesE695B0E68DAEE5BA93oracle"
+            ><div class='name'>oracle</div><div class='badge'>(2)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" href="/categories/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"
@@ -3273,7 +3381,7 @@ Docker 学习笔记Docker 简介Docker 最初是 dotCloud 公司创始人 Solomo
 
 
     <div class='content'>
-      <a href="/tags/C/" style="font-size: 14px; color: #999">C</a> <a href="/tags/CCNA/" style="font-size: 14px; color: #999">CCNA</a> <a href="/tags/FTP%E3%80%81Win7/" style="font-size: 14px; color: #999">FTP、Win7</a> <a href="/tags/Firefox/" style="font-size: 14px; color: #999">Firefox</a> <a href="/tags/JDK/" style="font-size: 14px; color: #999">JDK</a> <a href="/tags/Kali-Linux/" style="font-size: 14px; color: #999">Kali-Linux</a> <a href="/tags/Markdown/" style="font-size: 14px; color: #999">Markdown</a> <a href="/tags/Mircrosoft-office-2003%E3%80%81Win7/" style="font-size: 14px; color: #999">Mircrosoft office 2003、Win7</a> <a href="/tags/RIP/" style="font-size: 14px; color: #999">RIP</a> <a href="/tags/RouteOS%E3%80%81IPSec/" style="font-size: 14px; color: #999">RouteOS、IPSec</a> <a href="/tags/WebGoat/" style="font-size: 14px; color: #999">WebGoat</a> <a href="/tags/Webgoat/" style="font-size: 14px; color: #999">Webgoat</a> <a href="/tags/WireShark/" style="font-size: 14px; color: #999">WireShark</a> <a href="/tags/docker/" style="font-size: 14px; color: #999">docker</a> <a href="/tags/giscus/" style="font-size: 14px; color: #999">giscus</a> <a href="/tags/hexo/" style="font-size: 14px; color: #999">hexo</a> <a href="/tags/iptables/" style="font-size: 14px; color: #999">iptables</a> <a href="/tags/kali-linux/" style="font-size: 24px; color: #555">kali-linux</a> <a href="/tags/ubuntu%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" style="font-size: 14px; color: #999">ubuntu环境配置</a> <a href="/tags/webgoat/" style="font-size: 24px; color: #555">webgoat</a> <a href="/tags/%E4%BA%A4%E6%8D%A2%E6%9C%BA/" style="font-size: 14px; color: #999">交换机</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E9%85%8D%E7%BD%AE/" style="font-size: 14px; color: #999">数据库配置</a> <a href="/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%94%BB%E9%98%B2%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" style="font-size: 24px; color: #555">网络安全攻防环境搭建</a> <a href="/tags/%E7%BD%91%E7%BB%9C%E6%94%BB%E9%98%B2%E3%80%81Win7%E3%80%81WinServer2016/" style="font-size: 14px; color: #999">网络攻防、Win7、WinServer2016</a> <a href="/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA%E3%80%81ICMP%E3%80%81%E9%98%B2%E7%81%AB%E5%A2%99/" style="font-size: 14px; color: #999">虚拟机、ICMP、防火墙</a>
+      <a href="/tags/C/" style="font-size: 14px; color: #999">C</a> <a href="/tags/CCNA/" style="font-size: 14px; color: #999">CCNA</a> <a href="/tags/FTP%E3%80%81Win7/" style="font-size: 14px; color: #999">FTP、Win7</a> <a href="/tags/Firefox/" style="font-size: 14px; color: #999">Firefox</a> <a href="/tags/IPSec/" style="font-size: 14px; color: #999">IPSec</a> <a href="/tags/JDK/" style="font-size: 14px; color: #999">JDK</a> <a href="/tags/Kali-Linux/" style="font-size: 14px; color: #999">Kali-Linux</a> <a href="/tags/Markdown/" style="font-size: 14px; color: #999">Markdown</a> <a href="/tags/MinGw/" style="font-size: 14px; color: #999">MinGw</a> <a href="/tags/Mircrosoft-office-2003%E3%80%81Win7/" style="font-size: 14px; color: #999">Mircrosoft office 2003、Win7</a> <a href="/tags/RIP/" style="font-size: 14px; color: #999">RIP</a> <a href="/tags/RouteOS/" style="font-size: 14px; color: #999">RouteOS</a> <a href="/tags/WebGoat/" style="font-size: 14px; color: #999">WebGoat</a> <a href="/tags/Webgoat/" style="font-size: 14px; color: #999">Webgoat</a> <a href="/tags/Win7/" style="font-size: 14px; color: #999">Win7</a> <a href="/tags/WinServer2016/" style="font-size: 14px; color: #999">WinServer2016</a> <a href="/tags/WireShark/" style="font-size: 14px; color: #999">WireShark</a> <a href="/tags/centos/" style="font-size: 14px; color: #999">centos</a> <a href="/tags/docker/" style="font-size: 14px; color: #999">docker</a> <a href="/tags/giscus/" style="font-size: 14px; color: #999">giscus</a> <a href="/tags/git/" style="font-size: 24px; color: #555">git</a> <a href="/tags/hexo/" style="font-size: 14px; color: #999">hexo</a> <a href="/tags/iptables/" style="font-size: 14px; color: #999">iptables</a> <a href="/tags/kali-linux/" style="font-size: 24px; color: #555">kali-linux</a> <a href="/tags/oracle/" style="font-size: 24px; color: #555">oracle</a> <a href="/tags/ubuntu%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" style="font-size: 14px; color: #999">ubuntu环境配置</a> <a href="/tags/webgoat/" style="font-size: 24px; color: #555">webgoat</a> <a href="/tags/%E4%BA%A4%E6%8D%A2%E6%9C%BA/" style="font-size: 14px; color: #999">交换机</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E9%85%8D%E7%BD%AE/" style="font-size: 14px; color: #999">数据库配置</a> <a href="/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%94%BB%E9%98%B2%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" style="font-size: 24px; color: #555">网络安全攻防环境搭建</a> <a href="/tags/%E7%BD%91%E7%BB%9C%E6%94%BB%E9%98%B2/" style="font-size: 14px; color: #999">网络攻防</a> <a href="/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA%E3%80%81ICMP%E3%80%81%E9%98%B2%E7%81%AB%E5%A2%99/" style="font-size: 14px; color: #999">虚拟机、ICMP、防火墙</a>
     </div>
   </section>
 
@@ -3283,6 +3391,55 @@ Docker 学习笔记Docker 简介Docker 最初是 dotCloud 公司创始人 Solomo
 
   
 
+  
+    
+    
+      
+<section class="widget desktop pjax">
+  
+  <header>
+    
+      <i class="fa-solid fa-award fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
+    
+  </header>
+
+
+  <div class='content'>
+    <div class="webinfo">
+      
+        <div class="webinfo-item">
+          <div>文章数目：</div>
+          <div>90 篇</div>
+        </div>
+      
+
+      
+        <div class="webinfo-item">
+          <div>已运行时间：</div>
+          <div id="webinfo-runtime-count"></div>
+        </div>
+      
+
+
+      
+
+      
+
+      
+
+      
+        <div class="webinfo-item">
+          <div>最后活动时间：</div>
+          <div id="last-update-show">2024-07-17 日</div>
+        </div>
+      
+    </div>
+  </div>
+</section>
+
+    
+  
+
 
 <div class="widget-sticky pjax">
 
@@ -3290,10 +3447,6 @@ Docker 学习笔记Docker 简介Docker 最初是 dotCloud 公司创始人 Solomo
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -3838,7 +3991,7 @@ Docker 学习笔记Docker 简介Docker 最初是 dotCloud 公司创始人 Solomo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"学习记录","url":"https://username.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"单身一万年","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/","sameAs":["https://github.com/volantis-x"],"description":"学习和工作中的一些记录。"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://username.github.io/","name":"学习记录"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"学习记录","url":"https://username.github.io/","keywords":"Nerwork, Java, C/C++, Linux","description":"学习和工作中的一些记录。","author":{"@type":"Person","name":"单身一万年","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/","description":"学习和工作中的一些记录。"},"publisher":{"@type":"Organization","name":"学习记录","url":"https://username.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://username.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"学习和工作中的一些记录。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"单身一万年","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/"},"publisher":{"@type":"Organization","name":"学习记录","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"学习记录","url":"https://username.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"a bit clumsy boy","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/","sameAs":["https://github.com/volantis-x"],"description":"学习和工作中的一些记录。"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://username.github.io/","name":"学习记录"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"学习记录","url":"https://username.github.io/","keywords":"Nerwork, Java, C/C++, Linux","description":"学习和工作中的一些记录。","author":{"@type":"Person","name":"a bit clumsy boy","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/","description":"学习和工作中的一些记录。"},"publisher":{"@type":"Organization","name":"学习记录","url":"https://username.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://username.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"学习和工作中的一些记录。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"a bit clumsy boy","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/"},"publisher":{"@type":"Organization","name":"学习记录","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

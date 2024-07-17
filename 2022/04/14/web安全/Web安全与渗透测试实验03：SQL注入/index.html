@@ -51,7 +51,7 @@
   <!-- 页面元数据 -->
   <title>Web安全与渗透测试：SQL注入实验 - 学习记录</title>
   <meta name="keywords" content="webgoat,Nerwork, Java, C/C++, Linux">
-  <meta desc name="description" content="学习和工作中的一些记录。 - 单身一万年 - 学习记录">
+  <meta desc name="description" content="学习和工作中的一些记录。 - a bit clumsy boy - 学习记录">
   
 <meta property="og:type" content="article">
 <meta property="og:title" content="Web安全与渗透测试：SQL注入实验">
@@ -61,8 +61,8 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2022-04-14T08:44:26.000Z">
-<meta property="article:modified_time" content="2022-04-17T08:43:50.000Z">
-<meta property="article:author" content="单身一万年">
+<meta property="article:modified_time" content="2023-07-26T06:14:40.251Z">
+<meta property="article:author" content="a bit clumsy boy">
 <meta property="article:tag" content="webgoat">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -1645,9 +1645,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1690253052179),
+    lastupdate: new Date(1721210471577),
     sidebar: {
-      for_page: ["blogger","category","tagcloud","donate"],
+      for_page: ["blogger","category","tagcloud","donate","webinfo"],
       for_post: ["toc"],
       webinfo: {
         lastupd: {
@@ -2350,7 +2350,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='top'>
     
     
-      <p class="title">单身一万年的博客</p>
+      <p class="title">a bit clumsy boy</p>
     
     
   </div>
@@ -2442,7 +2442,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
   <a itemprop="url" class='author' href="/" rel="nofollow">
     <img itemprop="image" src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-    <p itemprop="name">请设置文章作者</p>
+    <p itemprop="name">a bit clumsy boy</p>
   </a>
 </div>
 
@@ -2503,32 +2503,32 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <h2 id="SQL注入"><a href="#SQL注入" class="headerlink" title="SQL注入"></a>SQL注入</h2><p> SQL注入是一种执行恶意SQL命令的注入攻击。攻击者通过把特殊的输入符号作为参数传入到Web应用程序中，这些输入大都是SQL语法里的一些组合，从而欺骗服务器执行恶意的SQL命令。当输入的参数为整形时，如果存在注入漏洞，可以认为是数字型SQL注入。当输入的参数为字符串时，称为字符型。</p>
 <h2 id="实验步骤"><a href="#实验步骤" class="headerlink" title="实验步骤"></a>实验步骤</h2><h3 id="数字型SQL注入（Numeric-SQL-Injection）"><a href="#数字型SQL注入（Numeric-SQL-Injection）" class="headerlink" title="数字型SQL注入（Numeric SQL Injection）"></a>数字型SQL注入（Numeric SQL Injection）</h3><p>通过注入数字获取所有的信息：</p>
 <p>SELECT * From user_data WHERE Login_Count = [] and userid= []</p>
-<p><img src="E:\MD-Images\image-20220416185757379.png" class="lazyload" data-srcset="E:\MD-Images\image-20220416185757379.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220416185757379"> </p>
-<p><img src="E:\MD-Images\image-20220416190017990.png" class="lazyload" data-srcset="E:\MD-Images\image-20220416190017990.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220416190017990"> </p>
+<p><img src="D:\develop\MD-Images\image-20220416185757379.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220416185757379.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220416185757379"> </p>
+<p><img src="D:\develop\MD-Images\image-20220416190017990.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220416190017990.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220416190017990"> </p>
 <p>WebScarab抓取：</p>
-<p><img src="E:\MD-Images\image-20220416190024528.png" class="lazyload" data-srcset="E:\MD-Images\image-20220416190024528.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220416190024528"> </p>
+<p><img src="D:\develop\MD-Images\image-20220416190024528.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220416190024528.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220416190024528"> </p>
 <h3 id="字符型SQL注入-String-SQL-Injection"><a href="#字符型SQL注入-String-SQL-Injection" class="headerlink" title="字符型SQL注入(String SQL Injection)"></a>字符型SQL注入(String SQL Injection)</h3><p>通过注入字符串来获取所有的信息：</p>
 <p>SELECT * FROM user_data WHERE first_name = ‘[]’ and last_name =[]</p>
-<p><img src="E:\MD-Images\image-20220416190306244.png" class="lazyload" data-srcset="E:\MD-Images\image-20220416190306244.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220416190306244"> </p>
-<p><img src="E:\MD-Images\image-20220416190310547.png" class="lazyload" data-srcset="E:\MD-Images\image-20220416190310547.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220416190310547"> </p>
+<p><img src="D:\develop\MD-Images\image-20220416190306244.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220416190306244.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220416190306244"> </p>
+<p><img src="D:\develop\MD-Images\image-20220416190310547.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220416190310547.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220416190310547"> </p>
 <p>webscarab抓取：</p>
-<p><img src="E:\MD-Images\image-20220416190326534.png" class="lazyload" data-srcset="E:\MD-Images\image-20220416190326534.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220416190326534"> </p>
+<p><img src="D:\develop\MD-Images\image-20220416190326534.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220416190326534.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220416190326534"> </p>
 <h3 id="SQL注入小实验"><a href="#SQL注入小实验" class="headerlink" title="SQL注入小实验"></a>SQL注入小实验</h3><h4 id="SQL-Injection"><a href="#SQL-Injection" class="headerlink" title="SQL Injection"></a>SQL Injection</h4><p>使用字符串SQL注入绕过认证。使用SQL注入以Boss（“Neville”）登录而不需要正确的密码。验证Neville的简介可被查看，所有其他功能可用（包含查询、创建和删除）。<br>使用WebScarab拦截请求，修改password=’ or’1’=’1，然后提交请求，如下图所示：</p>
 <p> WebScarab开启Reqeust拦截</p>
-<img src="E:\MD-Images\image-20220416214750333.png" class="lazyload" data-srcset="E:\MD-Images\image-20220416214750333.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220416214750333" style="zoom:67%;" /> 
+<img src="D:\develop\MD-Images\image-20220416214750333.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220416214750333.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220416214750333" style="zoom:67%;" /> 
 
 <p>其次网页端随便输入密码登录</p>
-<p><img src="E:\MD-Images\image-20220416214821010.png" class="lazyload" data-srcset="E:\MD-Images\image-20220416214821010.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220416214821010"> </p>
+<p><img src="D:\develop\MD-Images\image-20220416214821010.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220416214821010.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220416214821010"> </p>
 <p>​    等WebScarab拦截到之后修改参数实现SQL注入，从而实现使用不用密码登录</p>
-<p><img src="E:\MD-Images\image-20220416214847741.png" class="lazyload" data-srcset="E:\MD-Images\image-20220416214847741.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220416214847741"> </p>
+<p><img src="D:\develop\MD-Images\image-20220416214847741.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220416214847741.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220416214847741"> </p>
 <p>登录成功</p>
-<p><img src="E:\MD-Images\image-20220416214918503.png" class="lazyload" data-srcset="E:\MD-Images\image-20220416214918503.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220416214918503"> </p>
+<p><img src="D:\develop\MD-Images\image-20220416214918503.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220416214918503.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220416214918503"> </p>
 <h4 id="Parameterized-Query-1（修复方式：参数化查询）"><a href="#Parameterized-Query-1（修复方式：参数化查询）" class="headerlink" title="Parameterized Query #1（修复方式：参数化查询）"></a>Parameterized Query #1（修复方式：参数化查询）</h4><p>实施修复以阻止 SQL 注入登录页面上的相关字段。 重复第 1 阶段。验证攻击是否不再有效。因为需要修改源代码，所以这个步骤只能在WebGoat开发版中尝试。我的是7.1版本，在7.1版本中，源代码分为两部分，WebGoat-7.1和WebGoat-Lessons-develop两部分。具体WebGoat7.1开发版配置运行方法，见[GitHub官网][<a target="_blank" rel="noopener" href="https://github.com/fortify/gha-sample-workflows-WebGoat-7.1]%EF%BC%8C%E6%B5%81%E7%A8%8B%E5%A6%82%E4%B8%8B%EF%BC%9A">https://github.com/fortify/gha-sample-workflows-WebGoat-7.1]，流程如下：</a></p>
 <p>源代码：</p>
-<p><img src="E:\MD-Images\image-20220416215158148.png" class="lazyload" data-srcset="E:\MD-Images\image-20220416215158148.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220416215158148"> </p>
+<p><img src="D:\develop\MD-Images\image-20220416215158148.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220416215158148.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220416215158148"> </p>
 <p>修改部分在：</p>
 <p>/WebGoat-Lessons-develop/sql-injection/src/main/java/org/owasp/webgoat/plugin/sqlinjection/LoginSqlInjection.java的login方法中，修改前源代码：</p>
-<p><img src="E:\MD-Images\image-20220416215251661.png" class="lazyload" data-srcset="E:\MD-Images\image-20220416215251661.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220416215251661"> </p>
+<p><img src="D:\develop\MD-Images\image-20220416215251661.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220416215251661.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220416215251661"> </p>
 <p>需要在login方法将查询方式修改成PreparedStatement的参数化查询：</p>
 <p>即将String query = “SELECT * FROM employee WHERE userid = “ + userId + “ and password = ‘“ + password + “‘“; 修改为：String query = “SELECT * FROM employee WHERE userid = ? and password = ?”;</p>
 <p> 并将获取连接代码部分修改：</p>
@@ -2537,21 +2537,21 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>ps.setString(1, userId);</p>
 <p>ps.setString(2, password);</p>
 <p>修改后源代码：</p>
-<p><img src="E:\MD-Images\image-20220416215355823.png" class="lazyload" data-srcset="E:\MD-Images\image-20220416215355823.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220416215355823"> </p>
+<p><img src="D:\develop\MD-Images\image-20220416215355823.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220416215355823.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220416215355823"> </p>
 <p>重新部署并执行第一步的SQL注入语句发现，此时已经不能进行SQL注入了，出现如下页面：</p>
-<p><img src="E:\MD-Images\image-20220416215418022.png" class="lazyload" data-srcset="E:\MD-Images\image-20220416215418022.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220416215418022"> </p>
+<p><img src="D:\develop\MD-Images\image-20220416215418022.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220416215418022.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220416215418022"> </p>
 <h4 id="数字型SQL注入小实验"><a href="#数字型SQL注入小实验" class="headerlink" title="数字型SQL注入小实验"></a>数字型SQL注入小实验</h4><p>首先执行随便输入密码，并在WebScarab拦截修改password= ‘or’1’=’1登录</p>
 <p>登录成功：</p>
-<p><img src="E:\MD-Images\image-20220416215446581.png" class="lazyload" data-srcset="E:\MD-Images\image-20220416215446581.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220416215446581"> </p>
+<p><img src="D:\develop\MD-Images\image-20220416215446581.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220416215446581.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220416215446581"> </p>
 <p>点击ViewProfile准备查看老板资料，使用WebScarab获取Request修改参数，获取老板信息</p>
-<p><img src="E:\MD-Images\image-20220416215511498.png" class="lazyload" data-srcset="E:\MD-Images\image-20220416215511498.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220416215511498"> </p>
+<p><img src="D:\develop\MD-Images\image-20220416215511498.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220416215511498.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220416215511498"> </p>
 <p>修改employee_id=101 or 1=1 order by salary desc</p>
-<p><img src="E:\MD-Images\image-20220416215523256.png" class="lazyload" data-srcset="E:\MD-Images\image-20220416215523256.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220416215523256"> </p>
+<p><img src="D:\develop\MD-Images\image-20220416215523256.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220416215523256.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220416215523256"> </p>
 <p>查询成功：</p>
-<p><img src="E:\MD-Images\image-20220416215539038.png" class="lazyload" data-srcset="E:\MD-Images\image-20220416215539038.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220416215539038"> </p>
+<p><img src="D:\develop\MD-Images\image-20220416215539038.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220416215539038.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220416215539038"> </p>
 <p>此时便可以查阅老板Neville的资料</p>
 <h4 id="Parameterized-Query-2-（修复方式：参数化查询）"><a href="#Parameterized-Query-2-（修复方式：参数化查询）" class="headerlink" title="Parameterized Query #2 （修复方式：参数化查询）"></a>Parameterized Query #2 （修复方式：参数化查询）</h4><p>使用参数化查询阻止SQL注入。实施修复来阻止登录页字段的SQL注入问题。重复阶段3。验证攻击不再生效。待修改部分源码在/WebGoat-Lessons-develop/sql-injection/src/main/java/org/owasp/webgoat/plugin/sqlinjection/ViewProfileSqlInjection.java的getEmployeeProfile方法中</p>
-<p><img src="E:\MD-Images\image-20220416215609103.png" class="lazyload" data-srcset="E:\MD-Images\image-20220416215609103.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220416215609103"> </p>
+<p><img src="D:\develop\MD-Images\image-20220416215609103.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220416215609103.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220416215609103"> </p>
 <p>需要将 String query = “SELECT employee.* “+ “FROM employee,ownership WHERE employee.userid = ownership.employee_id and “ + “ownership.employer_id = “ + userId + “ and ownership.employee_id = “ + subjectUserId; 修改为：</p>
 <p>String query = “SELECT employee.* FROM employee,ownership WHERE employee.userid = ownership.employee_id and ownership.employer_id = ? and ownership.employee_id = ?”;</p>
 <p>修改查询部分，同样修改为使用PreparedStatement的参数化查询：</p>
@@ -2559,9 +2559,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>PreparedStatement ps = (PreparedStatement) Connection.preparedStatement(query ,ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);</p>
 <p>ps.setString(1, userId);</p>
 <p>ps.setString(2, subjectUserId); </p>
-<p><img src="E:\MD-Images\image-20220416215701085.png" class="lazyload" data-srcset="E:\MD-Images\image-20220416215701085.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220416215701085"> </p>
+<p><img src="D:\develop\MD-Images\image-20220416215701085.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220416215701085.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220416215701085"> </p>
 <p>完成修改之后重新部署运行，执行第三步的代码，出现如下：</p>
-<p><img src="E:\MD-Images\image-20220416215711962.png" class="lazyload" data-srcset="E:\MD-Images\image-20220416215711962.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220416215711962"> </p>
+<p><img src="D:\develop\MD-Images\image-20220416215711962.png" class="lazyload" data-srcset="D:\develop\MD-Images\image-20220416215711962.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220416215711962"> </p>
 <p>即实验成功</p>
 
   </div>
@@ -2587,10 +2587,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-04-17T16:43:50+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-07-26T14:14:40+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2022年4月17日</p>
+    <p>更新于：2023年7月26日</p>
   </a>
 </div>
 
@@ -3311,7 +3311,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"学习记录","url":"https://username.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"单身一万年","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/","sameAs":["https://github.com/volantis-x"],"description":"学习和工作中的一些记录。"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://username.github.io/","name":"学习记录"}},{"@type":"ListItem","position":2,"item":{"@id":"https://username.github.io/categories/Web安全与渗透测试实验/","name":"Web安全与渗透测试实验"}},{"@type":"ListItem","position":3,"item":{"@id":"https://username.github.io/2022/04/14/web安全/Web安全与渗透测试实验03：SQL注入/","name":"Web安全与渗透测试：SQL注入实验"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"学习记录","url":"https://username.github.io/","keywords":"Nerwork, Java, C/C++, Linux","description":"学习和工作中的一些记录。","author":{"@type":"Person","name":"单身一万年","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/","description":"学习和工作中的一些记录。"},"publisher":{"@type":"Organization","name":"学习记录","url":"https://username.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://username.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Web安全与渗透测试：SQL注入实验","description":"学习和工作中的一些记录。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://username.github.io/2022/04/14/web%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8%E4%B8%8E%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AE%9E%E9%AA%8C03%EF%BC%9ASQL%E6%B3%A8%E5%85%A5/"},"author":{"@type":"Person","name":"单身一万年","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/"},"publisher":{"@type":"Organization","name":"学习记录","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://username.github.io/2022/04/14/web%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8%E4%B8%8E%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AE%9E%E9%AA%8C03%EF%BC%9ASQL%E6%B3%A8%E5%85%A5/","wordCount":0,"datePublished":"2022-04-14T08:44:26.000Z","dateModified":"2022-04-17T08:43:50.000Z","articleSection":"Web安全与渗透测试实验","keywords":"webgoat","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"学习记录","url":"https://username.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"a bit clumsy boy","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/","sameAs":["https://github.com/volantis-x"],"description":"学习和工作中的一些记录。"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://username.github.io/","name":"学习记录"}},{"@type":"ListItem","position":2,"item":{"@id":"https://username.github.io/categories/Web安全与渗透测试实验/","name":"Web安全与渗透测试实验"}},{"@type":"ListItem","position":3,"item":{"@id":"https://username.github.io/2022/04/14/web安全/Web安全与渗透测试实验03：SQL注入/","name":"Web安全与渗透测试：SQL注入实验"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"学习记录","url":"https://username.github.io/","keywords":"Nerwork, Java, C/C++, Linux","description":"学习和工作中的一些记录。","author":{"@type":"Person","name":"a bit clumsy boy","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/","description":"学习和工作中的一些记录。"},"publisher":{"@type":"Organization","name":"学习记录","url":"https://username.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://username.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Web安全与渗透测试：SQL注入实验","description":"学习和工作中的一些记录。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://username.github.io/2022/04/14/web%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8%E4%B8%8E%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AE%9E%E9%AA%8C03%EF%BC%9ASQL%E6%B3%A8%E5%85%A5/"},"author":{"@type":"Person","name":"a bit clumsy boy","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://username.github.io/"},"publisher":{"@type":"Organization","name":"学习记录","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://username.github.io/2022/04/14/web%E5%AE%89%E5%85%A8/Web%E5%AE%89%E5%85%A8%E4%B8%8E%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%AE%9E%E9%AA%8C03%EF%BC%9ASQL%E6%B3%A8%E5%85%A5/","wordCount":0,"datePublished":"2022-04-14T08:44:26.000Z","dateModified":"2023-07-26T06:14:40.251Z","articleSection":"Web安全与渗透测试实验","keywords":"webgoat","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
